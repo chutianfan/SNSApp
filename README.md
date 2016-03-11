@@ -1,6 +1,6 @@
-# Social
+# Social Network service android application
 
-  This is social network service application is made by Android SDK.
+  This is social network service application with Android SDK.
   
 ## Features
   ```
