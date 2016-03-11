@@ -6,7 +6,7 @@
   ```
     1. Video/Photo Sharing
     2. Friend Following
-    3. Video/Photo Edit/Upload/Record/Filtering
+    3. Video/Photo Show
     4. Login/Register with Facebook/Kakao
   ```
 
