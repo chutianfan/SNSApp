@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/selectd_img_item_width" android:layout_height="@dimen/selectd_img_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/main_image_gallery_rl" android:layout_width="@dimen/selectd_img_item_width" android:layout_height="@dimen/selectd_img_item_height">
+        <com.gitrose.mobile.view.RoundedImageView android:layout_gravity="center_vertical" android:id="@id/gallery_adapter_iv" android:layout_width="@dimen/selectd_img_item_width" android:layout_height="@dimen/selectd_img_item_height" android:layout_marginLeft="@dimen/topic_item_head_interval" android:layout_marginTop="@dimen/topic_item_head_interval" android:scaleType="centerCrop" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/delete_img" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/gallery_adapter_tv" android:background="@drawable/selected_image_count_bg" android:layout_width="30.0dip" android:layout_height="25.0dip" android:layout_marginRight="@dimen/personal_province_marginright" android:layout_marginBottom="@dimen/personal_province_marginright" android:text="11" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dialog_bg"
+    android:paddingBottom="10.0dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/title_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/reg_finish"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@id/take_photo_close"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/home_head_icon_magin"
+            android:paddingRight="@dimen/home_head_icon_magin"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_eightteen" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_welcome_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="18dp"
+            android:textColor="@color/text_pink_color"
+            android:textSize="@dimen/title_text_size"
+            android:text="@string/welcome"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/text_gray_color"
+            android:text="@string/check_mail"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/text_bold_gray_color"
+            android:text="@string/confirm"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="5dp"
+            android:background="#909090"
+            />
+
+        <Button
+            android:id="@id/activity_login_bt"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/login_bt_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/edit_text_padding_left"
+            android:layout_marginRight="@dimen/edit_text_padding_left"
+            android:layout_marginTop="@dimen/login_register_divider_height"
+            android:background="@drawable/login_button"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/send_text_color"
+            android:textSize="@dimen/title_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

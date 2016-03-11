@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_pop_content" android:padding="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/setting_title_text_color" android:gravity="center" android:id="@id/photo_pop_tv_capture" android:background="@drawable/white_top_round_broder_selector" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:text="@string/camera" />
+    <View android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/setting_title_text_color" android:gravity="center" android:id="@id/photo_pop_tv_album" android:background="@drawable/white_bottom_round_broder_selector" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:text="@string/chat_photo_tip" />
+    <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/dialog_cancel_text_color" android:gravity="center" android:id="@id/photo_pop_tv_cancel" android:background="@drawable/white_round_broder_selector" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_marginTop="13.0dip" android:text="@string/cancle" />
+</LinearLayout>

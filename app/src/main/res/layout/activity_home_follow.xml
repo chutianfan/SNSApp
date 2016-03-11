@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container_rl" android:background="@color/home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baoyz.swipemenulistview.XListView android:id="@id/lv_pic_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false" style="@style/HomeFollowXListView" />
+    <RelativeLayout android:id="@id/home_action_bar" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height">
+        <ImageView android:id="@id/iv_add_friend" android:paddingLeft="@dimen/home_head_icon_magin" android:paddingRight="@dimen/home_head_icon_magin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_friend_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/home_title_ziti_bg" android:id="@id/tv_home_fav" android:background="@drawable/home_fav_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_fav_tip" />
+            <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/home_title_ziti_bg" android:id="@id/tv_home_friend" android:background="@drawable/home_friend_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_follow" />
+            <ImageView android:layout_gravity="top|right|center" android:id="@id/home_follow_point" android:visibility="invisible" android:layout_width="@dimen/personal_point_size" android:layout_height="@dimen/personal_point_size" android:layout_marginLeft="-15.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/round_red" />
+        </LinearLayout>
+        <ImageView android:id="@id/img_take_photo" android:paddingLeft="@dimen/home_head_icon_magin" android:paddingRight="@dimen/home_head_icon_magin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_take_photo_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.gitrose.mobile.view.CircleImageView android:id="@id/circleimg_current_show_avatar" android:visibility="gone" android:layout_width="@dimen/home_person_avatar_size" android:layout_height="@dimen/home_person_avatar_size" android:layout_marginTop="@dimen/home_avator_margin_top" android:layout_centerHorizontal="true" android:onClick="onClick" style="@style/avatorCircleImageView" />
+</RelativeLayout>

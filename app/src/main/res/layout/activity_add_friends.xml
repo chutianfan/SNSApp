@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_container" android:background="@color/home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height">
+            <RelativeLayout android:orientation="vertical" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:gravity="center_vertical" android:id="@id/title_tv_left" android:paddingLeft="@dimen/distance_big_content" android:paddingRight="@dimen/distance_big_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_friends_title" android:singleLine="true" android:layout_centerInParent="true" />
+                <Button android:textSize="@dimen/text_size_eightteen" android:textColor="@drawable/personal_text_bg" android:gravity="center_vertical" android:id="@id/title_tv_right" android:background="#00000000" android:paddingLeft="@dimen/distance_big_content" android:paddingRight="@dimen/distance_big_content" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_friends_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/login_ll_tv" android:background="@color/login_err_bg" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_friends_error_toptip" />
+                <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/login_err_small_text_color" android:gravity="center_horizontal" android:id="@id/login_err_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_friends_login_err_tv" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/comment_reply_normal_color" android:gravity="center_vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/add_friends_hint" android:singleLine="true" />
+        <View android:background="#ffe1e6e5" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_marginTop="@dimen/private_chat_item_padding_top" />
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="@dimen/text_size_eightteen" android:gravity="top|left|center" android:id="@id/et_modify_sign" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="24.0dip" android:paddingRight="10.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="5" />
+            <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/chat_media_ziti_color" android:id="@id/tv_sign_length_hint" android:padding="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20" android:layout_below="@id/et_modify_sign" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="#ffe1e6e5" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" />
+    </LinearLayout>
+</RelativeLayout>

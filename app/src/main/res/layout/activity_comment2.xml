@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/transparent_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_comment_title" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tv_comment_close" android:padding="10.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment2_comment_close" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tv_comment_send" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment2_comment_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.gitrose.mobile.view.MoveCommentView android:id="@id/toastView_topic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rl_comment_bottom" android:layout_below="@id/rl_comment_title">
+        <ImageView android:layout_gravity="center" android:id="@id/image_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:gravity="top|center" android:id="@id/et_comment" android:background="@drawable/comment_input_01" android:padding="10.0dip" android:layout_width="120.0dip" android:layout_height="95.0dip" android:layout_marginTop="20.0dip" android:layout_toRightOf="@id/iv_cancel" android:layout_alignParentBottom="@id/iv_cancel" />
+            <ImageView android:id="@id/iv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_cancel" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </com.gitrose.mobile.view.MoveCommentView>
+    <RelativeLayout android:id="@id/rl_comment_bottom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tv_comment_bg" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment2comment_bg" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tv_comment_emotion" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment2_comment_emotion" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:gravity="center" android:id="@id/gv_comment_word" android:padding="5.0dip" android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:stretchMode="columnWidth" android:numColumns="3" />
+</RelativeLayout>

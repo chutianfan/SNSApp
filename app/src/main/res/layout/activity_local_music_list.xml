@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/comment_emotion_tab_normal" android:layout_width="fill_parent" android:layout_height="@dimen/recoder_top_height">
+        <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="#ffffffff" android:gravity="center" android:id="@id/back_tv" android:paddingLeft="@dimen/forget_margin" android:paddingRight="@dimen/forget_margin" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/real_search_back" android:layout_alignParentLeft="true" android:onClick="onClick" />
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/local_music" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="#ff53cbab" android:gravity="center" android:id="@id/make_tv" android:paddingLeft="@dimen/forget_margin" android:paddingRight="@dimen/forget_margin" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/finish" android:onClick="onClick" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/music_list_lv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:divider="@null" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/home_person_avatar_size" android:width="@dimen/home_person_avatar_size" />
+    <solid android:color="#80333333" />
+</shape>

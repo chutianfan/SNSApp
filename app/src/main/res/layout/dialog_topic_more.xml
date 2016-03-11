@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/dialog_bg"
+    android:orientation="vertical"
+    android:paddingBottom="10.0dip"
+    android:paddingTop="10.0dip">
+
+    <TextView
+        android:id="@id/share_tv_block"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/white_round_broder_selector"
+        android:gravity="center"
+        android:text="@string/block_content"
+        android:textColor="@color/setting_title_text_color"
+        android:textSize="@dimen/title_text_size" />
+
+    <TextView
+        android:id="@id/share_tv_report"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/white_round_broder_selector"
+        android:gravity="center"
+        android:text="@string/report_content_tip"
+        android:textColor="@color/setting_title_text_color"
+        android:textSize="@dimen/title_text_size" />
+
+    <TextView
+        android:id="@id/share_tv_fav"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/white_round_broder_selector"
+        android:gravity="center"
+        android:text="@string/fav"
+        android:textColor="@color/setting_title_text_color"
+        android:textSize="@dimen/title_text_size" />
+
+    <TextView
+        android:id="@id/share_tv_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/white_round_broder_selector"
+        android:gravity="center"
+        android:text="@string/real_search_back"
+        android:textColor="@color/hint_text_color"
+        android:textSize="@dimen/title_text_size" />
+</LinearLayout>

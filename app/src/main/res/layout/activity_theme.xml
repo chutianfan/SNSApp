@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container_rl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/theme_title_ll" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/recoder_top_height">
+        <ImageView android:id="@id/theme_activity_back_iv" android:padding="@dimen/forget_margin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/black_back_iv_bg" android:scaleType="fitCenter" android:onClick="onClick" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/theme_title_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="right" android:id="@id/theme_share_iv" android:padding="@dimen/forget_margin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/theme_share_iv_bg" android:scaleType="fitCenter" android:onClick="onClick" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/theme_title_ll">
+        <ImageView android:id="@id/progerss_iv" android:background="@drawable/tutu_loading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/progerss_iv" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/theme_publish_ll" android:background="@drawable/theme_publish_bg_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:src="@drawable/theme_publish_img" android:scaleType="fitCenter" />
+            <TextView android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginBottom="2.0dip" android:text="@string/theme_publish_text" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

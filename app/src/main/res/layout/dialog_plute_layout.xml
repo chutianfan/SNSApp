@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dialog_bg" android:padding="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="@color/setting_title_text_color" android:gravity="center" android:id="@id/tv_tip_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/distance_middle_content" android:layout_marginBottom="@dimen/distance_max_big_content" />
+    <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/setting_title_text_color" android:gravity="center" android:id="@id/pop_tv_submit_plute" android:background="@drawable/white_round_broder_selector" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_marginTop="13.0dip" android:text="@string/modify_nickname_sure" />
+    <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/hint_text_color" android:gravity="center" android:id="@id/pop_tv_cancel_plute" android:background="@drawable/white_round_broder_selector" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_marginTop="13.0dip" android:text="@string/cancle" />
+</LinearLayout>

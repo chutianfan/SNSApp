@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/square_luck_user_item_rl" android:background="@drawable/base_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <RelativeLayout android:id="@id/square_fans_rank_rl" android:layout_width="@dimen/square_hot_user_rank_width" android:layout_height="@dimen/friends_user_head_size" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/friends_text_size" android:textColor="@color/setting_title_text_color" android:id="@id/item_luck_rank_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/item_luck_rank_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fans_level1" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/friends_head_block" android:layout_width="@dimen/default_avatar_parent_heigh" android:layout_height="@dimen/friends_user_head_size" android:layout_toRightOf="@id/square_fans_rank_rl" android:layout_centerVertical="true">
+                    <com.gitrose.mobile.view.CircleImageView android:id="@id/friends_luck_head" android:layout_width="@dimen/friends_user_head_size" android:layout_height="@dimen/friends_user_head_size" android:layout_marginLeft="@dimen/friends_user_head_marginleft" android:src="@drawable/app_logo" android:onClick="onClick" />
+                    <ImageView android:id="@id/iv_isauth" android:background="@drawable/personal_isauth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/luck_list_item_right_iv" android:background="@drawable/fans_follow_me_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fans_item_bt_margin_top" android:layout_marginRight="@dimen/fans_item_bt_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/luck_user_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/friends_user_head_marginleft" android:layout_marginRight="@dimen/friends_user_head_marginleft" android:layout_toRightOf="@id/friends_head_block">
+                    <RelativeLayout android:id="@id/luck_user_info_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/friends_user_name_marginright">
+                        <TextView android:textSize="@dimen/nearby_text" android:textColor="@color/setting_title_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/luck_user_name_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="等你归来" android:lines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/luck_userhonorlevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/level_margin_nickname" android:src="@drawable/userhonorlevel1" android:layout_toRightOf="@id/luck_user_name_nick" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:id="@id/luck_info_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/luck_user_info_top">
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/square_luck_icon" />
+                        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/setting_text_color" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/luck_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text=" " android:lines="1" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/luck_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <View android:id="@id/bottom_line" android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/hot_user_avatar_divider_margin_left" android:layout_marginTop="8.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

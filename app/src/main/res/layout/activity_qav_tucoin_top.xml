@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/container_rl" android:background="@color/home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/title" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height">
+        <ImageView android:gravity="center_vertical" android:id="@id/qav_tucion_title_tv_left" android:paddingLeft="@dimen/home_action_bar_margin_left" android:paddingRight="@dimen/home_action_bar_margin_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/white" android:id="@id/title_tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_coin_top_title" android:singleLine="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/second_title_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/theme_hot_newest_guide_height">
+            <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/person_foot_num_color" android:gravity="center" android:id="@id/qav_tucion_left_top_one_tv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/live_coin_top_one" android:layout_weight="1.0" />
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:background="@color/rankview" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" />
+                <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/person_foot_num_color" android:gravity="center" android:id="@id/qav_tucion_right_top_all_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/live_coin_top_all" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/qav_tucion_left_top_one_translate_view" android:background="@color/action_bar_bg" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+            <View android:id="@id/qav_tucion_left_top_all_translate_view" android:background="@color/action_bar_bg" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/setting_pading_right" android:layout_below="@id/second_title_ll">
+        <include layout="@layout/empty_tip_layout" />
+        <com.baoyz.swipemenulistview.XListView android:id="@id/qav_tudou_top_listview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    </RelativeLayout>
+</RelativeLayout>

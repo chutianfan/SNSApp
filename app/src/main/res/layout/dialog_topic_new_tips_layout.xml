@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/topic_new_tips_rl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/new_topic_tips_des" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/des_margin_left" android:layout_marginTop="@dimen/des_margin_top" />
+    <ImageView android:background="@drawable/new_topic_tips_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/des_margin_left" android:layout_marginTop="@dimen/location_margin_top" />
+    <ImageView android:background="@drawable/new_topic_tips_niming" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/niming_margin_top" android:layout_marginRight="@dimen/des_margin_left" android:layout_alignParentRight="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/at_height" android:layout_marginBottom="@dimen/at_margin_bottom">
+        <ImageView android:background="@drawable/new_topic_tips_at" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/des_margin_left" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/at_height" android:layout_marginBottom="@dimen/at_margin_bottom">
+        <ImageView android:background="@drawable/new_topic_tips_ht" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ht_margin_left" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gitrose.mobile.view.SquareLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_bg">
+
+    <RelativeLayout
+        android:id="@id/works_pic_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@id/works_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/home_bg"
+            android:padding="@dimen/personal_grid_padding_h"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@id/works_pic_redpacket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/works_pic"
+            android:layout_alignTop="@id/works_pic"
+            android:layout_marginRight="@dimen/personal_grid_9_red_margin_top"
+            android:layout_marginTop="@dimen/personal_grid_9_red_margin_top"
+            android:scaleType="fitCenter"
+            android:src="@drawable/personal_9_red_packet" />
+
+        <ImageView
+            android:id="@id/works_pic_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/personal_video_bt" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@id/works_pic_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:padding="@dimen/personal_grid_padding_h"
+        android:scaleType="center"
+        android:src="@drawable/personal_camera_button"
+        android:visibility="gone" />
+</com.gitrose.mobile.view.SquareLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ll_pop_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/red_packet_recive_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/zan_item_avatar_rl" android:layout_width="@dimen/personal_info_head_size" android:layout_height="@dimen/personal_info_head_size">
+            <com.gitrose.mobile.view.CircleImageView android:id="@id/dialog_redpaket_avatar_iv" android:layout_width="@dimen/personal_info_head_size" android:layout_height="@dimen/personal_info_head_size" android:src="@drawable/music_cover03" />
+            <ImageView android:id="@id/dialog_redpaket_iv_isauth" android:background="@drawable/personal_isauth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignRight="@id/dialog_redpaket_avatar_iv" android:layout_alignBottom="@id/dialog_redpaket_avatar_iv" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/dialog_redpaket_nickname_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/recive_wallet_nickname_margin_top" android:text="nichen" />
+        <LinearLayout android:orientation="vertical" android:id="@id/dialog_redpaket_recive_money_ll" android:paddingTop="@dimen/recive_wallet_money_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/wallet_yellow_color" android:layout_gravity="center_horizontal" android:id="@id/dialog_redpaket_recive_money_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/recive_wallet_money_des_margin_top_self" android:text="8.80" />
+            <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="@color/wallet_des_color" android:layout_gravity="center_horizontal" android:id="@id/dialog_redpaket_recive_money_des_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/recive_wallet_money_des_margin_top_self" android:text="@string/enter_wallet" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/wallet_yellow_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/dialog_redpaket_look_more" android:paddingTop="@dimen/recive_wallet_money_margin_top" android:paddingBottom="@dimen/recive_wallet_look_more_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/look_more_redpaket" />
+    </LinearLayout>
+</RelativeLayout>

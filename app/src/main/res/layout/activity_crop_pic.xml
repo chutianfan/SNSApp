@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@id/activity_crop_bottom_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ff1f2422"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@id/activity_crop_pic_rotate_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="5.0dip"
+                android:src="@drawable/crop_rotate_button" />
+
+            <ImageView
+                android:id="@id/activity_crop_pic_change_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/crop_middle_button_margin"
+                android:layout_toRightOf="@id/activity_crop_pic_rotate_iv"
+                android:padding="5.0dip"
+                android:src="@drawable/crop_full_button" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@id/activity_crop_pic_cancel_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/crop_margin_left"
+            android:gravity="center"
+            android:padding="5.0dip"
+            android:src="@drawable/crop_cancel_button" />
+
+        <ImageView
+            android:id="@id/activity_crop_pic_sure_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/crop_margin_left"
+            android:gravity="center"
+            android:padding="5.0dip"
+            android:src="@drawable/crop_sure_button" />
+    </RelativeLayout>
+
+    <com.gitrose.mobile.view.crop.ClipImageLayout
+        android:id="@id/activity_crop_pic_clipImageLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/activity_crop_bottom_rl"
+        android:background="@color/home_bg" />
+</RelativeLayout>

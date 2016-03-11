@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container_rl" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/home_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/wallet_big_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_money_margin_top" android:layout_marginBottom="@dimen/my_money_margin_bottom" />
+        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/setting_title_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_money" />
+        <TextView android:textSize="@dimen/my_money_text_size" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/wallet_header_total_mmoney_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_money__text_margin_top" android:text="" />
+        <Button android:textSize="@dimen/title_text_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/activity_login_bt" android:background="@drawable/cash_button" android:layout_width="fill_parent" android:layout_height="@dimen/login_bt_height" android:layout_marginLeft="@dimen/edit_text_padding_left" android:layout_marginTop="@dimen/my_money_button_top" android:layout_marginRight="@dimen/edit_text_padding_left" android:layout_marginBottom="@dimen/my_money_margin_top" android:text="@string/my_money_Cash" android:layout_centerVertical="true" />
+        <View android:id="@id/bottom_line" android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/my_money_paddingTop" android:layout_marginTop="@dimen/my_money_paddingTop" android:layout_marginBottom="@dimen/my_money_margin_bottom">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/my_money_line" android:layout_width="5.0dip" android:layout_height="17.0dip" />
+            <TextView android:textColor="@color/my_money_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/money_detail" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

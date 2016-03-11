@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_comment_more_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/topic_detail_item_margin" android:layout_toLeftOf="@id/img_comment_more" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_comment_selector" android:background="@drawable/pop_topic_detail_comment_bg" android:paddingTop="@dimen/load_progress_border_width" android:paddingBottom="@dimen/load_progress_border_width" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.gitrose.mobile.view.DrawableCenterTextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/comment_pop_text_color" android:id="@id/tv_pop_comment_del" android:layout_width="@dimen/topic_detail_pop_width" android:layout_height="wrap_content" android:text="@string/delete" android:drawableLeft="@drawable/img_topic_detail_pop_del_selector" android:drawablePadding="@dimen/topic_detail_pop_interval" />
+        <View android:id="@id/v_pop_comment_del" android:background="@color/tip_pop_divider_color" android:layout_width="2.0px" android:layout_height="@dimen/tip_pop_divider_height" />
+        <com.gitrose.mobile.view.DrawableCenterTextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/comment_pop_text_color" android:id="@id/tv_pop_comment_comment" android:layout_width="@dimen/topic_detail_pop_width" android:layout_height="wrap_content" android:text="@string/comment_reply_tip" android:drawableLeft="@drawable/img_topic_detail_pop_comment_selector" android:drawablePadding="@dimen/topic_detail_pop_interval" />
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_topic_detail_inverted_triangle" android:scaleType="center" />
+</LinearLayout>

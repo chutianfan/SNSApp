@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/rl_action_bar" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height">
+        <ImageView android:gravity="center_vertical" android:id="@id/title_tv_left" android:paddingLeft="@dimen/distance_big_content" android:paddingRight="@dimen/distance_big_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_help" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:gravity="center_vertical" android:id="@id/img_finish" android:paddingLeft="@dimen/distance_big_content" android:paddingRight="@dimen/distance_big_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/img_sign_finish_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_magin_top" android:layout_below="@id/rl_action_bar">
+        <View android:background="#ffe1e6e5" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" />
+        <EditText android:textSize="@dimen/title_content_text_size" android:textColor="@color/setting_text_color" android:gravity="top|left|center" android:background="@color/white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/feedback_note" android:minLines="10" />
+        <View android:background="#ffe1e6e5" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/private_chat_ll_send" android:background="@drawable/rect_border" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/private_chat_iv_face" android:background="@drawable/chat_emotion_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+        <RelativeLayout android:orientation="horizontal" android:background="@drawable/round_border" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_toRightOf="@id/private_chat_iv_face" android:layout_alignParentRight="true">
+            <Button android:textColor="@color/send_text_color" android:id="@id/private_chat_bt_send" android:background="@drawable/send_round_border" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/feedback_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <EditText android:id="@id/private_chat_et" android:background="@null" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/private_chat_bt_send" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

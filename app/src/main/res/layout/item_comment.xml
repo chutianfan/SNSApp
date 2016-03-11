@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/content_text_size" android:textColor="@color/home_release_time_color" android:layout_gravity="center_vertical" android:id="@id/tv_hot_comment_mark" android:paddingTop="@dimen/home_head_view_margin" android:paddingRight="@dimen/home_head_view_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_hot_comment_tip" android:drawableTop="@drawable/icon_topic_hot" android:drawablePadding="@dimen/topic_item_head_interval"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

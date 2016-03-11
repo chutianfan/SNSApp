@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="14.0dip" android:paddingTop="18.0dip" android:paddingRight="14.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <RelativeLayout android:id="@id/promoter_main" android:background="@drawable/umeng_example_xp_shape_frame_grey" android:padding="1.0px" android:layout_width="fill_parent" android:layout_height="200.0dip">
+            <ImageView android:id="@id/imagev" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <RelativeLayout android:background="#44ffffff" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/adword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/promoter_left" android:background="@drawable/umeng_example_xp_shape_frame_grey" android:paddingLeft="14.0dip" android:paddingTop="18.0dip" android:paddingRight="14.0dip" android:paddingBottom="18.0dip" android:layout_width="140.0dip" android:layout_height="200.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Title" android:maxLines="1" />
+            <View android:background="#ffb8b7b7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="2.0dip" />
+            <ImageView android:id="@id/imagev" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="4.0dip" android:scaleType="fitXY" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/adword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/promoter_right" android:background="@drawable/umeng_example_xp_shape_frame_grey" android:paddingLeft="14.0dip" android:paddingTop="18.0dip" android:paddingRight="14.0dip" android:paddingBottom="18.0dip" android:layout_width="140.0dip" android:layout_height="200.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Title" android:maxLines="1" />
+            <View android:background="#ffb8b7b7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="2.0dip" />
+            <ImageView android:id="@id/imagev" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="4.0dip" android:scaleType="fitXY" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/adword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_centerInParent="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

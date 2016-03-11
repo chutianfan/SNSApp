@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dialog_bg" android:padding="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="@color/setting_title_text_color" android:gravity="center" android:id="@id/dialog_pauy_title_tv" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_marginTop="10.0dip" android:text="@string/select_pay_back_title" />
+    <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/login_register_tv_color" android:gravity="center" android:id="@id/dialog_pay_continue" android:background="@drawable/round_border_nostroke_white" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_marginTop="10.0dip" android:text="@string/select_pay_back_continue" />
+    <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/dialog_cancel_text_color" android:gravity="center" android:id="@id/dialog_pay_cancel" android:background="@drawable/round_border_nostroke_white" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_marginTop="10.0dip" android:text="@string/offline_dialog_cancel_bt" />
+</LinearLayout>

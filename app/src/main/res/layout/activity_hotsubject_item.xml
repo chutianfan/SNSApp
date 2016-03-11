@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/base_item_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/top_line" android:background="@color/setting_divider_color" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentTop="true" />
+    <TextView android:textColor="#ff999999" android:id="@id/catalog" android:background="#fff2f3f7" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_below="@id/top_line" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_below="@id/catalog" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/subject_image" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="15.0dip" android:src="@drawable/app_logo" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/subject_name_count_text" android:layout_width="wrap_content" android:layout_height="90.0dip" android:layout_toRightOf="@id/subject_image" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/subject_name_count" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:textSize="@dimen/friends_introduce_text_size" android:textColor="@color/home_release_time_color" android:gravity="center_vertical" android:id="@id/subject_count" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="count" android:singleLine="true" android:layout_alignParentRight="true" />
+                <TextView android:textSize="@dimen/friends_text_size" android:textColor="@color/setting_title_text_color" android:gravity="center_vertical" android:id="@id/subject_name" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="name" android:singleLine="true" android:layout_toLeftOf="@id/subject_count" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/friends_introduce_text_size" android:textColor="@color/home_release_time_color" android:gravity="center_vertical" android:id="@id/subject_text" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="text" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

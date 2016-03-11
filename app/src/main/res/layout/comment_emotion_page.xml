@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/emotion_header_rl" android:background="#ff2c3330" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height">
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/sticker" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_close_emotion" android:padding="@dimen/home_head_view_margin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/crop_cancel_button" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+        <View android:background="#ff1f2422" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_comment_emotion_title" android:background="@color/comment_emotion_tab_normal" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_below="@id/emotion_header_rl">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_toLeftOf="@id/iv_close_emotion">
+            <HorizontalScrollView android:background="#ff2c3330" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/action_bar_height">
+                    <GridView android:layout_gravity="center" android:id="@id/gv_emotion" android:layout_width="wrap_content" android:layout_height="@dimen/action_bar_height" android:cacheColorHint="#00000000" android:stretchMode="columnWidth" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <GridView android:gravity="center" android:id="@id/gv_comment_pic" android:background="#ff1f2422" android:padding="5.0dip" android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:stretchMode="columnWidth" android:numColumns="3" android:layout_below="@id/rl_comment_emotion_title" />
+</RelativeLayout>

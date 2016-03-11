@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container_rl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/setting_title_text_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/private_chat_item_right_tv_time" android:paddingTop="@dimen/private_chat_time_padding_top" android:paddingBottom="@dimen/private_chat_time_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014_10_24 18:10:05" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/private_chat_item_padding_top" android:layout_marginRight="10.0dip">
+        <RelativeLayout android:id="@id/private_chat_item_right_rl_avatar" android:layout_width="@dimen/friends_user_head_size" android:layout_height="@dimen/friends_user_head_size" android:layout_alignParentRight="true">
+            <com.gitrose.mobile.view.CircleImageView android:id="@id/private_chat_item_right_iv_avatar" android:layout_width="@dimen/private_chat_avatar_width" android:layout_height="@dimen/private_chat_avatar_width" android:layout_marginLeft="5.0dip" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/iv_isauth" android:background="@drawable/personal_isauth" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/private_chat_item_right_iv_avatar" android:layout_alignBottom="@id/private_chat_item_right_iv_avatar" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/private_chat_item_right_center_content_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/private_chat_item_right_rl_avatar">
+            <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/white" android:gravity="center_vertical" android:autoLink="web" android:id="@id/private_chat_item_right_tv_content" android:background="@drawable/chat_right_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/private_chat_ll_content_max" android:minWidth="@dimen/private_chat_min_width" android:minHeight="@dimen/private_chat_avatar_width" android:layout_toLeftOf="@id/private_chat_item_right_rl_avatar" android:lineSpacingExtra="@dimen/private_tv_space" />
+            <RelativeLayout android:id="@id/rl_chat_image_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/private_chat_item_right_rl_avatar">
+                <ImageView android:id="@id/iv_chat_image_right" android:layout_width="@dimen/pic_width" android:layout_height="@dimen/pic_height" android:scaleType="centerCrop" />
+                <ImageView android:background="@drawable/chat_right_top" android:layout_width="@dimen/pic_top_width" android:layout_height="@dimen/pic_top_height" />
+                <RelativeLayout android:id="@id/iv_chat_image_right_pb_rl" android:visibility="gone" android:layout_width="@dimen/pic_width" android:layout_height="@dimen/pic_height">
+                    <com.gitrose.mobile.view.RoundProgressBar android:id="@id/iv_chat_image_right_pb_loading" android:layout_width="@dimen/load_progress_width_private" android:layout_height="@dimen/load_progress_width_private" android:scaleType="centerInside" android:layout_centerInParent="true" style="@style/load_progress_2" />
+                    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/iv_chat_image_right_tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_chat_voice_right" android:background="@drawable/chat_right_bg" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_toLeftOf="@id/private_chat_item_right_rl_avatar">
+                <ImageView android:id="@id/iv_chat_voice_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/voice_right_3" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/white" android:id="@id/tv_voice_duration_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0''" android:layout_toLeftOf="@id/iv_chat_voice_right" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_media_right" android:background="@drawable/chat_right_media_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/private_chat_ll_margin_left" android:layout_toLeftOf="@id/private_chat_item_right_rl_avatar">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_media_right_extra_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/black" android:id="@id/ll_media_right_extra_tv" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                    <ImageView android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_chat_media_right" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_media_right_pic" android:layout_width="@dimen/media_pic_width" android:layout_height="@dimen/media_pic_width" android:src="@drawable/default_pic_bg" />
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip">
+                        <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/chat_media_title_color" android:id="@id/tv_media_right_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+                        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/home_release_time_color" android:ellipsize="end" android:id="@id/tv_media_right_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" android:maxLines="4" android:layout_below="@id/tv_media_right_title" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <ImageView android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rl_media_right_look" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+                    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/chat_media_ziti_color" android:gravity="center" android:id="@id/tv_media_right_look" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_right_media_right_look" android:drawableRight="@drawable/chat_system_left_bg" android:drawablePadding="5.0dip" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/private_chat_right_faile_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/private_chat_item_right_center_content_rl" android:layout_centerInParent="true">
+            <ProgressBar android:id="@id/private_chat_item_right_tv_pb" android:layout_width="25.0dip" android:layout_height="25.0dip" android:indeterminateDrawable="@drawable/share_loading_pb" android:indeterminateBehavior="repeat" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/private_chat_item_right_iv_failed" android:background="@drawable/send_err" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

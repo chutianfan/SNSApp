@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/base_item_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/dividing_line_view" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/category_rl" android:layout_width="fill_parent" android:layout_height="@dimen/recommend_category_height" android:layout_marginLeft="@dimen/recommend_padding" android:layout_marginRight="@dimen/recommend_padding">
+        <View android:id="@id/green_line_view" android:background="#ff53cbab" android:layout_width="wrap_content" android:layout_height="2.0dip" />
+        <TextView android:textSize="@dimen/title_content_text_size" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/category_title_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/maybe_interested_user" />
+        <TextView android:textSize="@dimen/content_text_size" android:textColor="#ff999999" android:gravity="center" android:id="@id/more_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="3.0dip" android:text="@string/more" android:drawableRight="@drawable/photo_to_right" android:drawablePadding="3.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/recommend_item_height" android:layout_marginLeft="@dimen/recommend_padding" android:layout_marginRight="@dimen/recommend_padding">
+        <RelativeLayout android:id="@id/img_rl" android:layout_width="@dimen/recommend_img_height" android:layout_height="@dimen/recommend_img_height" android:layout_marginRight="@dimen/recommend_padding" android:layout_centerVertical="true">
+            <com.gitrose.mobile.view.CircleImageView android:id="@id/round_avatar_iv" android:layout_width="@dimen/recommend_img_height" android:layout_height="@dimen/recommend_img_height" android:src="@drawable/app_logo" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/iv_isauth" android:background="@drawable/personal_isauth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/round_avatar_iv" android:layout_alignBottom="@id/round_avatar_iv" />
+            <ImageView android:id="@id/square_avatar_iv" android:layout_width="@dimen/recommend_img_height" android:layout_height="@dimen/recommend_img_height" android:src="@drawable/app_logo" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/recommend_padding" android:layout_toLeftOf="@id/follow_theme_bt" android:layout_toRightOf="@id/img_rl" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/poi_status_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/recommend_ipo" />
+                <TextView android:textSize="@dimen/title_content_text_size" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="八月长安" android:maxLines="1" />
+                <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/sex_age_rl" android:background="@drawable/personal_male_bg" android:layout_width="@dimen/personal_sex_age_width" android:layout_height="@dimen/personal_sex_age_height" android:layout_marginLeft="@dimen/friends_sex_age_marginleft" android:minWidth="@dimen/personal_sex_age_width">
+                    <ImageView android:id="@id/_sex_icon_iv" android:paddingLeft="@dimen/personal_sex_icon_paddingleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/male" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/white" android:id="@id/age_text_tv" android:paddingRight="@dimen/personal_age_text_paddingright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="19" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/level_iv" android:layout_width="wrap_content" android:layout_height="@dimen/level_icon_height" android:layout_marginLeft="8.0dip" android:src="@drawable/userhonorlevel1" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/content_text_size" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="你的通信录好友" />
+        </LinearLayout>
+        <ImageView android:id="@id/follow_user_iv" android:layout_width="wrap_content" android:layout_height="30.0dip" android:src="@drawable/follow_user" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/follow_theme_bt" android:background="@drawable/follow_theme_bg" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="65.0dip" android:layout_height="30.0dip" android:text="关注" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/line_margin_left" />
+</LinearLayout>

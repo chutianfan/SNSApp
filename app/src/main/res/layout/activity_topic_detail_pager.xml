@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gitrose.mobile.view.KeyboardRelativeLayout android:id="@id/container_rl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:background="@color/home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rl_topic_detail_emotion" />
+    <RelativeLayout android:id="@id/title_rl" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height">
+        <ImageView android:gravity="center_vertical" android:id="@id/title_tv_left" android:paddingLeft="@dimen/home_action_bar_margin_left" android:paddingRight="@dimen/home_action_bar_margin_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/white" android:id="@id/title_tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/topic_detail_tip" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:gravity="center_vertical" android:id="@id/iv_topic_del" android:paddingLeft="@dimen/home_action_bar_margin_left" android:paddingRight="@dimen/home_action_bar_margin_left" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/img_del_topic_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.gitrose.mobile.view.CircleImageView android:id="@id/circleimg_current_show_avatar" android:visibility="invisible" android:layout_width="@dimen/home_person_avatar_size" android:layout_height="@dimen/home_person_avatar_size" android:layout_marginTop="@dimen/home_avator_margin_top" android:layout_centerHorizontal="true" android:onClick="onClick" style="@style/avatorCircleImageView" />
+    <View android:id="@id/view_block" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rl_topic_detail_emotion" android:layout_below="@id/title_rl" />
+    <RelativeLayout android:id="@id/rl_topic_detail_emotion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/topic_detail_yinying" android:background="@drawable/topic_detail_emotion_yinying" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        <RelativeLayout android:background="@drawable/topic_detail_emotion_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/topic_detail_yinying">
+            <RelativeLayout android:id="@id/rl_topic_send" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_topic_emotion" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/topic_detail_emotion_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="@dimen/comment_content_text_size" android:textColor="@color/setting_title_text_color" android:textColorHint="@color/setting_text_color" android:id="@id/et_topic_comment" android:background="@drawable/topic_detail_edit_bg" android:paddingLeft="7.0dip" android:paddingTop="5.0dip" android:paddingRight="7.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:maxHeight="@dimen/private_edit_ll_max_height" android:minHeight="@dimen/private_edit_ll_height" android:hint="@string/topic_detail_send_hint" android:layout_toLeftOf="@id/iv_topic_send" android:layout_toRightOf="@id/iv_topic_emotion" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_topic_send" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/topic_detail_send_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_emotion_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_topic_send">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_emotion_page" android:background="@color/home_bg" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+                <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_below="@id/ll_emotion_page">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/iv_add_emotion">
+                        <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <GridView android:layout_gravity="center" android:id="@id/gv_emotion" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </RelativeLayout>
+                    <ImageView android:id="@id/iv_add_emotion" android:background="@drawable/topic_detail_emotion_border" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/action_bar_height" android:src="@drawable/topic_detail_emotion_add_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.gitrose.mobile.view.KeyboardRelativeLayout>

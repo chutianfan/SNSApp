@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gitrose.mobile.view.CircleImageView android:id="@id/wall_fj_point" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/umeng_socialize_follow_off" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/setting_title_text_color" android:gravity="left" android:id="@id/header" android:paddingLeft="4.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

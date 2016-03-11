@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@id/title_tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/home_action_bar_margin_left"
+            android:paddingRight="@dimen/home_action_bar_margin_left"
+            android:src="@drawable/back_button" />
+
+        <TextView
+            android:id="@id/title_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="가입하기"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@id/activity_register_get_code_next"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/home_head_icon_magin"
+            android:paddingRight="@dimen/home_head_icon_magin"
+            android:text="@string/register_check_code_bt_check"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_eightteen" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@id/img_wall"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/personal_imag_height"
+        android:layout_below="@id/title"
+        android:onClick="onClick"
+        android:scaleType="centerCrop"
+        android:src="@drawable/personal_wall_bg" />
+
+    <RelativeLayout
+        android:id="@id/personal_center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/img_wall"
+        android:background="#00000000"
+        android:paddingTop="@dimen/personal_center_paddingbottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/register_get_code_phone_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/verify_title_margin_bottom"
+                android:layout_marginTop="@dimen/verify_title_margin_top"
+                android:gravity="center"
+                android:paddingLeft="@dimen/verify_title_margin_top"
+                android:paddingRight="@dimen/verify_title_margin_top"
+                android:text="@string/reg2_comment"
+                android:textColor="@color/text_pink_color"
+                android:textSize="@dimen/content_text_size" />
+
+            <EditText
+                android:id="@id/activity_register_get_code_et_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/rect_border_et"
+                android:hint="@string/full_name"
+                android:paddingLeft="@dimen/verify_title_margin_top"
+                android:textColor="@color/black"
+                android:textColorHint="@color/comment_count_text_color"
+                android:textSize="@dimen/text_size_eightteen" />
+
+            <EditText
+                android:id="@id/activity_register_get_code_et_nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/rect_border_et"
+                android:hint="@string/phone_number"
+                android:paddingLeft="@dimen/verify_title_margin_top"
+                android:textColor="@color/black"
+                android:textColorHint="@color/comment_count_text_color"
+                android:textSize="@dimen/text_size_eightteen" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

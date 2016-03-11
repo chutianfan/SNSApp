@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/base_item_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/local_music_top_height">
+        <LinearLayout android:gravity="left|center" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/music_name_padding_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/title_text_size" android:textColor="#ff333333" android:gravity="center" android:id="@id/music_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的滑板鞋" android:maxLines="1" />
+            <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/music_name_margin_top">
+                <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="#ff999999" android:gravity="center" android:id="@id/music_artist_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="刘德华" android:maxLines="1" />
+                <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="#ff999999" android:gravity="center" android:id="@id/music_duration_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/music_name_padding_left" android:text="04:53" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right" android:id="@id/music_play_iv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/music_name_padding_left" android:src="@drawable/play_local_music_bg" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/hidden_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <SeekBar android:id="@id/music_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/music_name_padding_left" android:layout_marginTop="@dimen/music_name_padding_left" android:layout_marginRight="@dimen/music_name_padding_left" android:maxHeight="3.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/music_seekbar_bg_bar" android:minHeight="3.0dip" android:thumb="@drawable/local_music_bar" android:thumbOffset="0.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/music_time_margin_top" android:layout_marginBottom="@dimen/music_name_padding_left">
+            <TextView android:textColor="#ff999999" android:gravity="center" android:id="@id/music_start_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/music_name_padding_left" android:text="00:00" android:layout_alignParentLeft="true" />
+            <TextView android:textColor="#ff999999" android:gravity="center" android:id="@id/music_end_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/music_name_padding_left" android:text="00:00" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#ffdedede" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/music_line_padding_left" />
+</LinearLayout>

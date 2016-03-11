@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@id/recorder_surface_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/recorder_bottom"
+        android:background="@color/recoder_top_bg">
+
+        <SurfaceView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/recorder_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/recoder_buttom_height"
+        android:layout_alignParentBottom="true"
+        android:background="#ff1f2422">
+
+        <RelativeLayout
+            android:layout_width="50.0dip"
+            android:layout_height="100.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/recoder_left_action_left_margin">
+
+            <ImageView
+                android:id="@id/choose_pic_2_video_iv"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/choose_pic_2_video_img" />
+
+            <TextView
+                android:id="@id/small_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/choose_pic_2_video_iv"
+                android:layout_marginTop="3.0dip"
+                android:gravity="center"
+                android:text="@string/local_video"
+                android:textColor="#ff666666"
+                android:textSize="@dimen/date_text_size" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@id/delete_video_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/recoder_left_action_left_margin"
+            android:src="@drawable/delete_video_img"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@id/recoder_menu_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/recoder_menu_img" />
+
+        <ImageView
+            android:id="@id/stop_recoder_menu_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/stop_recoder_menu_img"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@id/switch_camera_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/recoder_left_action_left_margin"
+            android:src="@drawable/switch_camera_img" />
+
+        <ImageView
+            android:id="@id/ok_video_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/recoder_left_action_left_margin"
+            android:src="@drawable/ok_video_img"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@id/recorder_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/recoder_progress_height"
+        android:layout_below="@id/recorder_surface_parent"
+        android:max="100"
+        android:progressDrawable="@drawable/recoder_video_progress_bar_bg" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/music_and_cover_guide_height"
+        android:layout_above="@id/recorder_progress"
+        android:background="@color/recoder_top_bg" />
+
+    <LinearLayout
+        android:id="@id/recoder_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/recoder_top_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/recoder_top_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@id/recoder_close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/recoder_close_left_margin"
+            android:src="@drawable/crop_cancel_button" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@id/recoder_switch_flush_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/flush_open_img"
+                android:drawablePadding="5.0dip"
+                android:gravity="center"
+                android:paddingLeft="@dimen/recoder_flash_right_margin"
+                android:paddingRight="@dimen/recoder_flash_right_margin"
+                android:text="@string/camera_open_tip"
+                android:textColor="#ffffffff"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@id/recoder_switch_carmera_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/recoder_switch_camera_right_margin"
+                android:src="@drawable/recoder_switch_carmera_img"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

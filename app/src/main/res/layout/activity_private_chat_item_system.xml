@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_system_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/private_chat_item_system_tv_content" android:background="@drawable/chat_system_bg" android:paddingLeft="@dimen/private_chat_ll_sys_padding" android:paddingTop="5.0dip" android:paddingRight="@dimen/private_chat_ll_sys_padding" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/private_chat_ll_margin_left" android:layout_marginRight="@dimen/private_chat_ll_margin_left" android:minHeight="@dimen/private_chat_avatar_width" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_system_media" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/setting_title_text_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tv_system_time" android:paddingTop="@dimen/private_chat_time_padding_top" android:paddingBottom="@dimen/private_chat_time_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014_10_24 18:10:05" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/private_chat_item_padding_top" android:layout_marginRight="10.0dip">
+            <com.gitrose.mobile.view.CircleImageView android:id="@id/iv_system_avatar" android:layout_width="@dimen/private_chat_avatar_width" android:layout_height="@dimen/private_chat_avatar_width" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/chat_left_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_system_pic" android:layout_width="@dimen/media_pic_width" android:layout_height="@dimen/media_pic_width" />
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip">
+                        <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="@color/chat_media_title_color" android:id="@id/tv_system_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_system_title" android:singleLine="true" />
+                        <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/home_release_time_color" android:id="@id/tv_system_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/chat_system_content" android:maxLines="3" android:layout_below="@id/tv_system_title" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@id/rl_system_look" android:background="@drawable/chat_media_look_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <View android:id="@id/view_line" android:background="@color/border_color" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="@color/chat_media_ziti_color" android:id="@id/tv_system_look" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_sys_look" android:drawableRight="@drawable/chat_system_left_bg" android:drawablePadding="5.0dip" android:layout_below="@id/view_line" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

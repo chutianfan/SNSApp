@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/parent" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/rlayout1" android:layout_width="45.0dip" android:layout_height="50.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/imageview" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:gravity="right" android:id="@id/newtip_area" android:layout_width="28.0dip" android:layout_height="20.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/newtip_iv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+            <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/newtip_tv" android:paddingBottom="4.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlayout2" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/newtip" android:layout_width="20.0dip" android:layout_height="12.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/imageview" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/imageview2" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

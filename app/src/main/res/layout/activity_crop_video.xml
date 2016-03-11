@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/comment_emotion_tab_normal" android:layout_width="fill_parent" android:layout_height="@dimen/recoder_top_height">
+        <ImageView android:id="@id/back_iv" android:padding="@dimen/forget_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/black_back_iv_bg" android:layout_alignParentLeft="true" android:onClick="onClick" />
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/crop_video" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="#ff53cbab" android:gravity="center" android:id="@id/make_tv" android:paddingLeft="@dimen/forget_margin" android:paddingRight="@dimen/forget_margin" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/make_tv" android:onClick="onClick" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/video_view_rl" android:layout_width="fill_parent" android:layout_height="300.0dip">
+        <com.gitrose.mobile.view.QingGuoVideoView android:gravity="center" android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/start_rl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/start_img_view" android:background="@color/comment_emotion_tab_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/play_video_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/topic_video_paly_btn" android:scaleType="fitCenter" android:layout_centerInParent="true" android:onClick="onClick" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="#ff1f2422" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/framell" android:background="#ff2c3330" android:paddingTop="@dimen/framell_padding" android:paddingBottom="@dimen/framell_padding" android:layout_width="fill_parent" android:layout_height="@dimen/framell_height" android:layout_marginLeft="@dimen/framell_padding" android:layout_marginRight="@dimen/framell_padding" android:layout_centerInParent="true">
+            <com.gitrose.mobile.view.HorizontalListView android:id="@id/horizontalListView" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ffeeeeee" android:overScrollMode="never" widget:dividerWidth="0.0px"
+              xmlns:android="http://schemas.android.com/apk/res/android" xmlns:widget="http://schemas.android.com/apk/res-auto" />
+            <FrameLayout android:id="@id/touch_view" android:layout_width="140.0dip" android:layout_height="fill_parent">
+                <View android:background="@drawable/move_rect" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/rule_video_id">
+            <TextView android:textColor="#ff767877" android:gravity="center" android:id="@id/textview_01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text=":00" android:layout_weight="1.0" />
+            <TextView android:textColor="#ff767877" android:gravity="center" android:id="@id/textview_02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text=":05" android:layout_weight="1.0" />
+            <TextView android:textColor="#ff767877" android:gravity="center" android:id="@id/textview_03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text=":10" android:layout_weight="1.0" />
+            <TextView android:textColor="#ff767877" android:gravity="center" android:id="@id/textview_04" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text=":15" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:id="@id/rule_video_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/rule_video" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

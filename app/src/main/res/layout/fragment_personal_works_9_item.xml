@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="@dimen/personal_introduce_paddingleft"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="4.0dip"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@id/title_divider_line_iv"
+                android:layout_width="fill_parent"
+                android:layout_height="4.0dip"
+                android:layout_marginBottom="2.0dip"
+                android:background="@drawable/round_green_point" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/repeat_time_dot_line" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/frgment_9_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5.0dip"
+            android:textColor="@color/setting_title_text_color"
+            android:textSize="@dimen/text_size_eightteen" />
+    </LinearLayout>
+
+    <com.gitrose.mobile.view.ScrollGridView
+        android:id="@id/personal_expand_child_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_bg"
+        android:cacheColorHint="#00000000"
+        android:gravity="center"
+        android:horizontalSpacing="5.0dip"
+        android:listSelector="@drawable/base_item_bg_selector"
+        android:numColumns="3"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:scrollbars="@null"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5.0dip" />
+</LinearLayout>

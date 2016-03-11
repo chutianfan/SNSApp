@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_top_tip" android:background="@color/login_err_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/top_tip_margin_bottom" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/tv_top_tip_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/top_tips_marin_inval" />
+        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/login_err_small_text_color" android:gravity="center_horizontal" android:id="@id/tv_top_tip_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

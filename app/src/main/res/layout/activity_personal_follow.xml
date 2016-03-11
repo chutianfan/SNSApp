@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/follow_container_rl" android:background="@color/home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/follow_topic_title_rl" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height">
+        <ImageView android:gravity="center_vertical" android:id="@id/title_iv_left" android:paddingLeft="@dimen/home_action_bar_margin_left" android:paddingRight="@dimen/home_action_bar_margin_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/white" android:id="@id/title_tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/follow_topic_title_rl">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/personal_follow_rl_empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/personal_top_bar_height" android:layout_marginBottom="@dimen/personal_bottom_bar_height">
+            <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow_huati_empty_tip" />
+            <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/setting_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/look_for_care" />
+            <Button android:textSize="@dimen/title_content_text_size" android:textColor="@color/chat_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/personal_follow_bt_to_guangchang" android:background="@drawable/follow_empty_round_border" android:paddingLeft="30.0dip" android:paddingTop="10.0dip" android:paddingRight="30.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/huati_guangchang" />
+        </LinearLayout>
+        <com.handmark.pulltorefresh.library.PullToRefreshListView android:gravity="center" android:id="@id/personal_follow_listview" android:background="@color/home_bg" android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/base_item_bg_selector" android:cacheColorHint="#00000000" android:divider="@color/home_bg" android:dividerHeight="@dimen/personal_follow_item_padding_top" />
+    </FrameLayout>
+</RelativeLayout>

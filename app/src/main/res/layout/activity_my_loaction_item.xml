@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_pull_refresh_view" android:background="@color/home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/my_loacation_item_rl" android:background="@drawable/base_item_bg_selector" android:layout_width="fill_parent" android:layout_height="@dimen/setting_hidden_item_hieght">
+        <ImageView android:id="@id/my_loacation_item_iv_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_margin_right" android:layout_marginRight="@dimen/setting_margin_right" android:src="@drawable/icon_choice_hidden_mode" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/setting_magin_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/my_loacation_item_iv_select" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/setting_title_text_color" android:ellipsize="end" android:id="@id/my_loacation_item_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/setting_hidden_item_padding_top" android:singleLine="true" />
+            <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/setting_text_color" android:ellipsize="end" android:id="@id/my_loacation_item_tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/my_loacation_item_iv_divder" android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_marginLeft="@dimen/setting_magin_left" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

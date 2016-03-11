@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:background="@color/live_present_top_bg_90" android:layout_width="fill_parent" android:layout_height="@dimen/live_present_top_height">
+            <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/white" android:id="@id/live_present_my_tubi_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_pading_right" android:text="我的余额：200Tu币" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/send_text_color" android:id="@id/live_present_chongzhi_tv" android:background="@drawable/login_button" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/setting_pading_right" android:text="@string/live_present_chongzhi" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/live_present_middle_item_height">
+            <LinearLayout android:id="@id/live_present_xianhua_ll" android:background="@drawable/live_present_item_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/xianhua_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/home_release_time_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_xianhua" />
+                    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/live_follow_bg" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_10tubi" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/live_present_memeda_ll" android:background="@drawable/live_present_item_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/memeda_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/home_release_time_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_memeda" />
+                    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/live_follow_bg" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_50tubi" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/live_present_latiao_ll" android:background="@drawable/live_present_item_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/latiao_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/home_release_time_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_latiao" />
+                    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/live_follow_bg" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_100tubi" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/live_present_feizao_ll" android:background="@drawable/live_present_item_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/feizao_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/home_release_time_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_feizao" />
+                    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/live_follow_bg" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_500tubi" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/live_present_middle_item_height">
+            <LinearLayout android:id="@id/live_present_iphone_ll" android:background="@drawable/live_present_item_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/iphone_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/home_release_time_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_iphone" />
+                    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/live_follow_bg" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_1ktubi" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/live_present_zuanjie_ll" android:background="@drawable/live_present_item_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/zuanjie_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/home_release_time_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_zuanjie" />
+                    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/live_follow_bg" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_1wtubi" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/live_present_paoche_ll" android:background="@drawable/live_present_item_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/paoche_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/home_release_time_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_paoche" />
+                    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/live_follow_bg" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_present_2wtubi" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:background="@color/live_present_bottom_bg" android:layout_width="fill_parent" android:layout_height="@dimen/live_present_top_height">
+            <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/send_text_color" android:gravity="center" android:id="@id/live_present_send_tv" android:background="@drawable/live_present_send_button" android:layout_width="@dimen/live_present_send_width" android:layout_height="fill_parent" android:text="@string/live_present_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/live_present_num_ll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/live_present_send_num_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/live_present_num_1" />
+                <ImageView android:layout_gravity="center_vertical" android:paddingLeft="@dimen/setting_pading_right" android:paddingRight="@dimen/setting_pading_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/live_present_more" android:scaleType="centerInside" />
+            </LinearLayout>
+            <ImageView android:id="@id/live_present_select_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/setting_pading_right" android:src="@drawable/xianhua" android:layout_toLeftOf="@id/live_present_num_ll" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

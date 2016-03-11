@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dialog_bg" android:padding="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/setting_title_text_color" android:gravity="center" android:id="@id/dialog_private_chat_pic_send" android:background="@drawable/white_round_broder_selector" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_marginTop="10.0dip" android:text="@string/dialog_private_chat_pic_send" />
+    <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/setting_title_text_color" android:gravity="center" android:id="@id/dialog_private_chat_pic_save" android:background="@drawable/white_round_broder_selector" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_marginTop="10.0dip" android:text="@string/dialog_private_chat_pic_save" />
+    <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/dialog_cancel_text_color" android:gravity="center" android:id="@id/dialog_private_chat_pic_cancel" android:background="@drawable/white_round_broder_selector" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_marginTop="10.0dip" android:text="@string/real_search_back" />
+</LinearLayout>

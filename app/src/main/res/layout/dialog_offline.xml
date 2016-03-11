@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_pop_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/white_round_border" android:padding="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/share_dialog_margin" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/setting_title_text_color" android:gravity="center" android:id="@id/photo_pop_tv_capture" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dlg_offline_notify" />
+            <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/setting_text_color" android:id="@id/photo_pop_tv_album" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/dlg_offline_notity_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <Button android:textSize="@dimen/title_content_text_size" android:textColor="@color/cancel_text_color" android:id="@id/offline_dialog_cancel_bt" android:background="@drawable/cancel_round_border" android:padding="@dimen/share_dialog_bt_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/offline_dialog_cancel_bt" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/title_content_text_size" android:textColor="@color/send_text_color" android:id="@id/offline_dialog_login_bt" android:background="@drawable/sure_round_border" android:padding="@dimen/share_dialog_bt_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/offline_dialog_login_bt" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

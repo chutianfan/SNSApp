@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/recoder_top_height">
+            <ImageView android:id="@id/photo_wall_back_iv" android:padding="@dimen/forget_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/black_back_iv_bg" android:layout_alignParentLeft="true" android:onClick="onClick" />
+            <TextView android:textSize="@dimen/title_text_size" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/photo_wall_select" android:layout_centerInParent="true" />
+            <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="#ffffffff" android:gravity="center" android:id="@id/photo_wall_ok_tv" android:paddingLeft="@dimen/forget_margin" android:paddingRight="@dimen/forget_margin" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/photo_wall_ok_tv" android:onClick="onClick" />
+            </LinearLayout>
+        </RelativeLayout>
+        <GridView android:gravity="center" android:id="@id/photo_wall_grid" android:padding="5.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:stretchMode="columnWidth" android:numColumns="4" android:layout_weight="1.0" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_phonto_bootom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/setting_text_color" android:gravity="center" android:id="@id/selected_img_count_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_item_margin_bottom" android:layout_marginBottom="@dimen/home_item_margin_bottom" />
+            <LinearLayout android:gravity="center_vertical" android:background="@color/item_press_bg" android:layout_width="fill_parent" android:layout_height="@dimen/selectd_img_buttom_height">
+                <com.gitrose.mobile.view.HorizontalListView android:id="@id/horizontalListView" android:background="@color/item_press_bg" android:layout_width="fill_parent" android:layout_height="@dimen/selectd_img_item_height" android:divider="@color/item_press_bg" android:overScrollMode="never" widget:dividerWidth="4.0dip"
+                  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:widget="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

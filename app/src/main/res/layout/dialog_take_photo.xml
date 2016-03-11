@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/ll_pop_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white_80">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@id/photo_pop_live_rl"
+                android:layout_width="@dimen/home_dialog_publish_item_width"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@id/photo_pop_tv_live"
+                    android:layout_width="@dimen/home_dialog_publish_item_width"
+                    android:layout_height="@dimen/home_dialog_publish_item_width"
+                    android:background="@drawable/round_green_big"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/dialog_live_button" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/photo_pop_tv_live"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/home_dialog_publish_item_tv_margin_top"
+                    android:text="@string/dialog_live"
+                    android:textColor="@color/setting_title_text_color"
+                    android:textSize="@dimen/content_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photo_pop_live_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/home_dialog_publish_item_margin_top">
+
+                <RelativeLayout
+                    android:id="@id/photo_pop_album_rl"
+                    android:layout_width="@dimen/home_dialog_publish_item_width"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@id/photo_pop_tv_album"
+                        android:layout_width="@dimen/home_dialog_publish_item_width"
+                        android:layout_height="@dimen/home_dialog_publish_item_width"
+                        android:background="@drawable/round_green_big"
+                        android:gravity="center"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/dialog_album_button" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/photo_pop_tv_album"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/home_dialog_publish_item_tv_margin_top"
+                        android:text="@string/dialog_album"
+                        android:textColor="@color/setting_title_text_color"
+                        android:textSize="@dimen/content_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/photo_pop_capture_rl"
+                    android:layout_width="@dimen/home_dialog_publish_item_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/home_dialog_publish_item_margin_left"
+                    android:layout_marginRight="@dimen/home_dialog_publish_item_margin_left"
+                    android:layout_toRightOf="@id/photo_pop_album_rl">
+
+                    <ImageView
+                        android:id="@id/photo_pop_tv_capture"
+                        android:layout_width="@dimen/home_dialog_publish_item_width"
+                        android:layout_height="@dimen/home_dialog_publish_item_width"
+                        android:background="@drawable/round_green_big"
+                        android:gravity="center"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/dialog_capture_button" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/photo_pop_tv_capture"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/home_dialog_publish_item_tv_margin_top"
+                        android:text="@string/camera"
+                        android:textColor="@color/setting_title_text_color"
+                        android:textSize="@dimen/content_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/photo_pop_video_rl"
+                    android:layout_width="@dimen/home_dialog_publish_item_width"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/photo_pop_capture_rl">
+
+                    <ImageView
+                        android:id="@id/take_small_video"
+                        android:layout_width="@dimen/home_dialog_publish_item_width"
+                        android:layout_height="@dimen/home_dialog_publish_item_width"
+                        android:background="@drawable/round_green_big"
+                        android:gravity="center"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/dialog_video_button" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/take_small_video"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/home_dialog_publish_item_tv_margin_top"
+                        android:text="@string/dlg_take_small_video"
+                        android:textColor="@color/setting_title_text_color"
+                        android:textSize="@dimen/content_text_size" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@id/photo_pop_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/home_dialog_publish_finish_margin_bottom"
+            android:src="@drawable/live_back_button" />
+    </RelativeLayout>
+</RelativeLayout>

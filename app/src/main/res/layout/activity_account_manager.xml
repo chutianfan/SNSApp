@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/ll_modify"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/home_bg">
+
+    <RelativeLayout
+        android:id="@id/title_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg">
+
+        <ImageView
+            android:id="@id/title_tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/home_action_bar_margin_left"
+            android:paddingRight="@dimen/home_action_bar_margin_left"
+            android:src="@drawable/back_button" />
+
+        <TextView
+            android:id="@id/title_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/account_manager_title_tv_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <com.gitrose.mobile.view.ReboundScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_rl"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/rl_modify_avator"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_avator_item_height"
+                android:layout_marginTop="@dimen/setting_magin_top"
+                android:background="@drawable/base_item_bg_selector"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_line_height"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/setting_border_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:text="@string/account_manager_header"
+                    android:textColor="@color/setting_title_text_color"
+                    android:textSize="@dimen/title_content_text_size" />
+
+                <ImageView
+                    android:id="@id/img_avator_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:src="@drawable/icon_to_right" />
+
+                <com.gitrose.mobile.view.CircleImageView
+                    android:id="@id/cirlceimg_modify_avator"
+                    android:layout_width="@dimen/setting_avator_size"
+                    android:layout_height="@dimen/setting_avator_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_pading_right"
+                    android:layout_toLeftOf="@id/img_avator_select"
+                    android:src="@drawable/default_avatar_bg" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:background="@color/setting_divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_modify_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/base_item_bg_selector"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:text="@string/account_manager_nickname"
+                    android:textColor="@color/setting_title_text_color"
+                    android:textSize="@dimen/title_content_text_size" />
+
+                <ImageView
+                    android:id="@id/img_name_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:src="@drawable/icon_to_right" />
+
+                <TextView
+                    android:id="@id/tv_modify_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_pading_right"
+                    android:layout_toLeftOf="@id/img_name_select"
+                    android:textColor="@color/setting_text_color" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:background="@color/setting_divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_tutu_number"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/base_item_bg_selector"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:text="@string/account_manager_tutu"
+                    android:textColor="@color/setting_title_text_color"
+                    android:textSize="@dimen/title_content_text_size" />
+
+                <ImageView
+                    android:id="@id/img_tutu_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:src="@drawable/icon_to_right"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@id/tv_tutu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_pading_right"
+                    android:layout_toLeftOf="@id/img_tutu_select"
+                    android:textColor="@color/setting_text_color" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:background="@color/setting_divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_modify_sex"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/base_item_bg_selector"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:text="@string/sex"
+                    android:textColor="@color/setting_title_text_color"
+                    android:textSize="@dimen/title_content_text_size" />
+
+                <ImageView
+                    android:id="@id/img_sex_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:src="@drawable/icon_to_right" />
+
+                <TextView
+                    android:id="@id/tv_modify_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_pading_right"
+                    android:layout_toLeftOf="@id/img_sex_select"
+                    android:textColor="@color/setting_text_color" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:background="@color/setting_divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_modify_brith"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/base_item_bg_selector"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:text="@string/birthday"
+                    android:textColor="@color/setting_title_text_color"
+                    android:textSize="@dimen/title_content_text_size" />
+
+                <ImageView
+                    android:id="@id/img_birth_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:src="@drawable/icon_to_right" />
+
+                <TextView
+                    android:id="@id/tv_modify_brith"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_pading_right"
+                    android:layout_toLeftOf="@id/img_birth_select"
+                    android:textColor="@color/setting_text_color" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:background="@color/setting_divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_modify_area"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/base_item_bg_selector"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:text="@string/area"
+                    android:textColor="@color/setting_title_text_color"
+                    android:textSize="@dimen/title_content_text_size" />
+
+                <ImageView
+                    android:id="@id/img_area_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:src="@drawable/icon_to_right" />
+
+                <TextView
+                    android:id="@id/tv_modify_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_pading_right"
+                    android:layout_toLeftOf="@id/img_area_select"
+                    android:textColor="@color/setting_text_color" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:background="@color/setting_divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_modify_signature"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_item_bg_selector"
+                android:clickable="true"
+                android:minHeight="@dimen/setting_item_height"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/tv_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:text="@string/sign"
+                    android:textColor="@color/setting_title_text_color"
+                    android:textSize="@dimen/title_content_text_size" />
+
+                <ImageView
+                    android:id="@id/img_sign_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:src="@drawable/icon_to_right" />
+
+                <TextView
+                    android:id="@id/tv_modify_signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/setting_magin_left"
+                    android:layout_marginLeft="60.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginTop="@dimen/setting_magin_left"
+                    android:layout_toLeftOf="@id/img_sign_select"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="2"
+                    android:textColor="@color/setting_text_color" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:background="@color/setting_divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_modify_daren"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_item_bg_selector"
+                android:clickable="true"
+                android:minHeight="@dimen/setting_item_height"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/tv_daren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:text="@string/tutu_daren"
+                    android:textColor="@color/setting_title_text_color"
+                    android:textSize="@dimen/title_content_text_size" />
+
+                <ImageView
+                    android:id="@id/img_sign_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:src="@drawable/icon_to_right" />
+
+                <ImageView
+                    android:id="@id/iv_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_toLeftOf="@id/img_sign_select"
+                    android:src="@drawable/round_red"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@id/tv_modify_daren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/setting_magin_left"
+                    android:layout_marginLeft="60.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_marginTop="@dimen/setting_magin_left"
+                    android:layout_toLeftOf="@id/iv_news"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="2"
+                    android:textColor="@color/setting_text_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_line_height"
+                android:background="@color/setting_border_color" />
+
+            <RelativeLayout
+                android:id="@id/rl_modify_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/setting_magin_top"
+                android:background="@drawable/base_item_bg_selector"
+                android:clickable="true"
+                android:minHeight="@dimen/setting_item_height"
+                android:onClick="onClick">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_line_height"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/setting_border_color" />
+
+                <TextView
+                    android:id="@id/tv_modify_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/setting_magin_left"
+                    android:text="@string/modify_pwd"
+                    android:textColor="@color/setting_title_text_color"
+                    android:textSize="@dimen/title_content_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/setting_margin_right"
+                    android:src="@drawable/icon_to_right" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/setting_border_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_logout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_marginBottom="@dimen/setting_magin_top"
+                android:layout_marginTop="@dimen/setting_magin_top"
+                android:background="@drawable/base_item_bg_selector"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_line_height"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/setting_border_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/user_logoff"
+                    android:textColor="@color/dialog_cancel_text_color"
+                    android:textSize="@dimen/text_size_eightteen" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/setting_border_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.gitrose.mobile.view.ReboundScrollView>
+</RelativeLayout>

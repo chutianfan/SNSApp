@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/square_hot_user_item_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_item_bg_selector">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip">
+
+                <RelativeLayout
+                    android:id="@id/square_hotuser_rank_rl"
+                    android:layout_width="@dimen/square_hot_user_rank_width"
+                    android:layout_height="@dimen/friends_user_head_size"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@id/item_rank_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/setting_title_text_color"
+                        android:textSize="@dimen/friends_text_size" />
+
+                    <ImageView
+                        android:id="@id/item_rank_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/fans_level1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/friends_head_block"
+                    android:layout_width="@dimen/default_avatar_parent_heigh"
+                    android:layout_height="@dimen/friends_user_head_size"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/square_hotuser_rank_rl">
+
+                    <com.gitrose.mobile.view.CircleImageView
+                        android:id="@id/friends_user_head"
+                        android:layout_width="@dimen/friends_user_head_size"
+                        android:layout_height="@dimen/friends_user_head_size"
+                        android:layout_marginLeft="@dimen/friends_user_head_marginleft"
+                        android:onClick="onClick" />
+
+                    <ImageView
+                        android:id="@id/iv_isauth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:visibility="gone"
+                        android:background="@drawable/personal_isauth" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@id/fans_item_right_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/fans_item_bt_margin_right"
+                    android:layout_marginTop="@dimen/fans_item_bt_margin_top"
+                    android:background="@drawable/fans_follow_me_button" />
+
+                <RelativeLayout
+                    android:id="@id/friends_user_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/friends_user_head_marginleft"
+                    android:layout_marginRight="@dimen/friends_user_head_marginleft"
+                    android:layout_toLeftOf="@id/fans_item_right_iv"
+                    android:layout_toRightOf="@id/friends_head_block">
+
+                    <RelativeLayout
+                        android:id="@id/friends_user_info_top"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/follow_middle_top"
+                        android:layout_marginRight="@dimen/friends_user_name_marginright">
+
+                        <TextView
+                            android:id="@id/friends_user_name_nick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:lines="1"
+                            android:text="닉네임"
+                            android:textColor="@color/setting_title_text_color"
+                            android:textSize="@dimen/friends_text_size" />
+
+                        <ImageView
+                            android:id="@id/friends_userhonorlevel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/level_margin_nickname"
+                            android:visibility="gone"
+                            android:layout_toRightOf="@id/friends_user_name_nick"
+                            android:src="@drawable/userhonorlevel1" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@id/friends_introduce"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/friends_user_info_top"
+                        android:layout_marginRight="@dimen/friends_user_name_marginright"
+                        android:layout_marginTop="@dimen/follow_middle_top"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="사용자이름"
+                        android:textColor="@color/home_release_time_color"
+                        android:textSize="@dimen/friends_introduce_text_size" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@id/bottom_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="@dimen/hot_user_avatar_divider_margin_left"
+                android:layout_marginTop="8.0dip"
+                android:background="@color/setting_divider_color" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

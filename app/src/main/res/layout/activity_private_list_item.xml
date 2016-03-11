@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/private_list_item_ll" android:background="@drawable/base_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <RelativeLayout android:id="@id/private_list_item_rl_avatar" android:layout_width="@dimen/default_avatar_parent_heigh" android:layout_height="@dimen/friends_user_head_size">
+                <com.gitrose.mobile.view.CircleImageView android:id="@id/private_list_item_iv_avatar" android:layout_width="@dimen/friends_user_head_size" android:layout_height="@dimen/friends_user_head_size" android:layout_marginLeft="10.0dip" />
+                <ImageView android:id="@id/iv_isauth" android:background="@drawable/personal_isauth" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/private_list_item_iv_avatar" android:layout_alignBottom="@id/private_list_item_iv_avatar" />
+                <ImageView android:id="@id/private_list_item_iv_isblock" android:background="@drawable/isblock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <Button android:id="@id/private_list_item_bt_cancle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/private_list_item_bt_cancle" android:layout_toRightOf="@id/private_list_item_rl_avatar" android:layout_centerVertical="true">
+                <RelativeLayout android:id="@id/private_list_item_rl_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/home_release_time_color" android:gravity="center" android:id="@id/private_list_item_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/private_list_item_tv_time" android:layout_alignParentLeft="true">
+                        <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/setting_title_text_color" android:ellipsize="end" android:gravity="left" android:id="@id/private_list_item_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="12" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/private_list_item_iv_level" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/home_head_icon_magin" android:src="@drawable/userhonorlevel1" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/private_list_item_rl_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+                    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/private_list_item_tv_news_count" android:background="@drawable/private_red_rouad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/home_release_time_color" android:ellipsize="end" android:id="@id/private_list_item_tv_chat_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" android:layout_toLeftOf="@id/private_list_item_tv_news_count" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/default_avatar_divider_margin_left" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

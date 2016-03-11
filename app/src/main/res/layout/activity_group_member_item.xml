@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ff999999" android:id="@id/catalog" android:background="#fff2f3f7" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/setting_item_height" android:layout_below="@id/catalog">
+        <com.gitrose.mobile.view.CircleImageView android:id="@id/head_image" android:layout_width="@dimen/friends_user_head_size" android:layout_height="@dimen/friends_user_head_size" android:layout_marginLeft="@dimen/friends_user_head_marginleft" android:layout_marginTop="@dimen/friends_user_head_margintop" android:layout_marginRight="@dimen/friends_user_head_marginright" android:layout_marginBottom="@dimen/friends_user_head_marginbottom" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/head_image" android:layout_centerVertical="true" />
+        <Button android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/relation_button" android:background="@drawable/round_border_big_green" android:layout_width="65.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/friends_user_head_marginleft" android:layout_marginBottom="5.0dip" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/bottom_line" android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_line_height" android:layout_alignLeft="@id/title" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

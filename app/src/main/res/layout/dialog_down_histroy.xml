@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dialog_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.gitrose.mobile">
+    <com.gitrose.mobile.view.RoundProgressBar android:id="@id/downloading" android:layout_width="@dimen/load_progress_width" android:layout_height="@dimen/load_progress_width" android:scaleType="centerInside" android:layout_centerInParent="true" app:textColor="@color/action_bar_bg" app:textIsDisplayable="true" style="@style/load_progress_green" />
+    <TextView android:textColor="@color/black" android:id="@id/downloading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/downloading_text" android:layout_below="@id/downloading" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@color/action_bar_bg" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:text="0%" android:layout_centerInParent="true" />
+</RelativeLayout>

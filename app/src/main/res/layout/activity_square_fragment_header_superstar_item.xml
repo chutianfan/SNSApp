@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/square_super_star_item_avatar_rl" android:layout_width="@dimen/square_super_star_item_avatar_height" android:layout_height="@dimen/square_super_star_item_avatar_height" android:layout_centerHorizontal="true">
+        <com.gitrose.mobile.view.CircleImageView android:id="@id/square_super_star_item_avatar_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/music_cover01" />
+        <ImageView android:id="@id/square_super_star_item_avatar_isauth_iv" android:background="@drawable/personal_isauth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/setting_title_text_color" android:ellipsize="end" android:id="@id/square_super_star_item_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:maxLength="5" android:layout_below="@id/square_super_star_item_avatar_rl" android:layout_centerHorizontal="true" />
+</RelativeLayout>

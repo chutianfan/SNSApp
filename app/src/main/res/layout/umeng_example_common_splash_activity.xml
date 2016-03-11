@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootId" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="30.0dip" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="应用联盟" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/umeng_banner_promotion" android:layout_width="fill_parent" android:layout_height="100.0dip" android:src="@drawable/umeng_example_common_banner_promotion" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="全面的移动广告管理方案，优化广告效果，实时调控及报表分析。" android:layout_below="@id/umeng_banner_promotion" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/banner" android:background="@drawable/umeng_example_xp_logo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

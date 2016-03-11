@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gitrose.mobile.view.ScrollGridView android:gravity="center" android:id="@id/grapeGridview" android:background="@color/home_bg" android:paddingLeft="1.0dip" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="172.0dip" android:listSelector="@null" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" />
+    <ImageView android:id="@id/main_del_face" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/face_del" android:layout_alignRight="@id/grapeGridview" android:layout_alignBottom="@id/grapeGridview" />
+</RelativeLayout>

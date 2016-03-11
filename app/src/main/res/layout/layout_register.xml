@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout android:layout_width="fill_parent" android:layout_gravity="center" android:layout_height="@dimen/login_bt_height">
+
+        <!--<EditText-->
+            <!--android:id="@+id/edit_reg_email"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:inputType="textEmailAddress"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="@string/input_email"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="@color/text_gray_color"-->
+            <!--android:textSize="18sp"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_arrow"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="24dp"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:background="@drawable/btn_next_gray"-->
+            <!--/>-->
+
+        <ImageView android:id="@id/activity_register_email_iv_next" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/edit_text_padding_left" android:layout_marginBottom="5.0dip" android:src="@drawable/icon_to_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <EditText android:textSize="@dimen/text_size_eightteen" android:textColor="@color/setting_title_text_color" android:textColorHint="@color/login_et_hint_text_color" android:id="@id/activity_login_et_phone" android:background="@null" android:paddingLeft="@dimen/edit_text_padding_left" android:paddingRight="@dimen/edit_text_padding_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:hint="@string/mobile_number" android:singleLine="true" android:drawableLeft="@drawable/login_phone_iv" android:layout_toLeftOf="@id/activity_register_email_iv_next" />
+        <ImageView android:background="@color/pop_photo_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+        <ImageView android:background="@color/pop_photo_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</LinearLayout> 

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gitrose.mobile.view.AnimationTabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="false"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/home_bottom_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/tv_home"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/personal_bottom_home"
+                />
+
+            <ImageView
+                android:id="@id/home_nearby"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:src="@drawable/personal_bottom_nearby"
+
+                />
+
+            <ImageView
+                android:id="@id/tv_chat"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:src="@drawable/personal_bottom_chatslist"
+                />
+
+            <ImageView
+                android:id="@id/tv_news"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:src="@drawable/personal_bottom_newslist"
+                />
+
+            <ImageView
+                android:id="@id/tv_my"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:src="@drawable/personal_bottom_friends"
+                />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/home_bottom_bar" />
+
+        <View
+            android:id="@id/user_guide_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/home_foot_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/personal_praise_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+</com.gitrose.mobile.view.AnimationTabHost>

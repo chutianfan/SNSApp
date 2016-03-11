@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_rl" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height">
+        <ImageView android:gravity="center_vertical" android:id="@id/title_tv_left" android:paddingLeft="@dimen/home_action_bar_margin_left" android:paddingRight="@dimen/home_action_bar_margin_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" />
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/white" android:id="@id/title_tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/secret" android:singleLine="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.gitrose.mobile.view.ReboundScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rl_blacklist" android:background="@drawable/base_item_bg_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/setting_item_height" android:layout_marginTop="@dimen/setting_magin_top" android:onClick="onClick">
+                <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/setting_title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_magin_left" android:text="@string/black_users_list" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/setting_margin_right" android:src="@drawable/icon_to_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <View android:background="@color/setting_border_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentTop="true" />
+                <View android:background="@color/setting_border_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_marginLeft="@dimen/setting_magin_left" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_hiden_mode" android:background="@drawable/base_item_bg_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/setting_item_height" android:onClick="onClick">
+                <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/setting_title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_magin_left" android:text="@string/hiden_mode" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/setting_margin_right" android:src="@drawable/icon_to_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <View android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_marginLeft="@dimen/setting_magin_left" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_privatechat_import" android:background="@drawable/base_item_bg_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/setting_item_height" android:layout_marginBottom="@dimen/setting_magin_top" android:onClick="onClick">
+                <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/setting_title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_magin_left" android:text="@string/privatechat_import" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textStyle="bold" android:textColor="@color/action_bar_bg" android:id="@id/tv_download" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/setting_margin_right" android:text="@string/start_download" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/pb_rl" android:visibility="gone" android:layout_width="@dimen/setting_item_height" android:layout_height="@dimen/setting_item_height" android:layout_marginRight="@dimen/setting_margin_right" android:layout_alignParentRight="true"
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res/com.gitrose.mobile">
+                    <com.gitrose.mobile.view.RoundProgressBar android:id="@id/downloading_pb" android:layout_width="@dimen/home_item_video_see_width" android:layout_height="@dimen/home_item_video_see_width" android:scaleType="centerInside" android:layout_centerInParent="true" app:textColor="@color/action_bar_bg" app:textIsDisplayable="true" style="@style/setting_load_progress_green" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/action_bar_bg" android:id="@id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:text="0%" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:background="@color/setting_border_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.gitrose.mobile.view.ReboundScrollView>
+</LinearLayout>

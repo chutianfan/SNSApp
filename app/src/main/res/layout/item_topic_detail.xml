@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_item_bg_selector">
+
+    <RelativeLayout
+        android:id="@id/rl_comment_self"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/topic_detail_pop_interval"
+        android:layout_marginLeft="@dimen/topic_detail_item_margin"
+        android:layout_marginTop="@dimen/topic_detail_item_margin">
+
+        <com.gitrose.mobile.view.CircleImageView
+            android:id="@id/img_topic_detail_comment_user_avatar"
+            android:layout_width="@dimen/topic_detail_avatar_size"
+            android:layout_height="@dimen/topic_detail_avatar_size"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/topic_detail_item_avatar_padding_right"
+            android:src="@drawable/default_avatar" />
+
+        <ImageView
+            android:id="@id/iv_isauth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_topic_detail_comment_user_avatar"
+            android:layout_alignRight="@id/img_topic_detail_comment_user_avatar"
+            android:background="@drawable/personal_isauth" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_topic_detail_comment_user_avatar">
+
+            <TextView
+                android:id="@id/tv_comment_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1.0dip"
+                android:textColor="@color/topic_username_color"
+                android:textSize="@dimen/title_content_text_size" />
+
+            <ImageView
+                android:id="@id/tips_list_item_iv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="1.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:layout_toRightOf="@id/tv_comment_user_name"
+                android:src="@drawable/userhonorlevel1"
+                android:visibility="visible" />
+
+            <com.gitrose.mobile.view.DrawableCenterTextView
+                android:id="@id/tv_comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_comment_user_name"
+                android:drawableLeft="@drawable/topic_detail_clock"
+                android:drawablePadding="@dimen/topic_item_head_small_interval"
+                android:textColor="@color/home_release_time_color"
+                android:textSize="@dimen/date_text_size" />
+
+            <com.gitrose.mobile.view.DrawableCenterTextView
+                android:id="@id/tv_comment_fav_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_comment_user_name"
+                android:layout_marginLeft="8.0dip"
+                android:layout_toRightOf="@id/tv_comment_time"
+                android:drawableLeft="@drawable/img_topic_detail_like_count_selector"
+                android:drawablePadding="@dimen/topic_item_head_small_interval"
+                android:textColor="@color/home_release_time_color"
+                android:textSize="@dimen/content_text_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@id/img_comment_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/topic_detail_pop_interval"
+            android:paddingLeft="@dimen/topic_detail_pop_interval"
+            android:paddingRight="@dimen/topic_detail_item_margin"
+            android:paddingTop="@dimen/topic_detail_pop_interval"
+            android:src="@drawable/img_topic_detail_like_selector"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@id/img_comment_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_comment_fav"
+            android:padding="@dimen/topic_detail_pop_interval"
+            android:src="@drawable/img_topic_detail_more_selector"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/fl_comment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_comment_self"
+        android:layout_marginLeft="@dimen/topic_detail_text_margin_left"
+        android:layout_marginRight="@dimen/topic_detail_item_margin"
+        android:background="@drawable/comment_item_bg_selector">
+
+        <TextView
+            android:id="@id/tv_comment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_item_bg_selector"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip"
+            android:textSize="@dimen/title_content_text_size"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@id/img_comment_bg"
+            android:layout_width="@dimen/topic_detail_img_height"
+            android:layout_height="@dimen/topic_detail_img_height"
+            android:layout_below="@id/tv_comment_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/ll_reply_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_comment_content"
+        android:layout_marginLeft="@dimen/topic_detail_text_margin_left"
+        android:layout_marginRight="@dimen/topic_detail_item_margin"
+        android:layout_marginTop="@dimen/topic_item_foot_interval"
+        android:background="@drawable/topic_detail_comment_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/tv_reply_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/home_comment_switch_margin" />
+
+        <TextView
+            android:id="@id/tv_reply_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/home_comment_switch_margin"
+            android:paddingLeft="@dimen/home_comment_switch_margin"
+            android:paddingRight="@dimen/home_comment_switch_margin"
+            android:textColor="#ff999999" />
+
+        <ImageView
+            android:id="@id/img_rely_comment"
+            android:layout_width="@dimen/topic_detail_img_height"
+            android:layout_height="@dimen/topic_detail_img_height"
+            android:layout_marginBottom="@dimen/home_comment_switch_margin"
+            android:layout_marginLeft="@dimen/home_comment_switch_margin" />
+    </LinearLayout>
+
+    <View
+        android:id="@id/v_comment_foot_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_line_height"
+        android:layout_below="@id/ll_reply_comment"
+        android:layout_marginLeft="@dimen/topic_detail_item_margin"
+        android:layout_marginTop="@dimen/topic_detail_item_margin"
+        android:background="@color/setting_divider_color" />
+</RelativeLayout>

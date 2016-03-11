@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container_rl" android:background="@color/home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/title" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height">
+            <ImageView android:gravity="center_vertical" android:id="@id/title_tv_left" android:paddingLeft="@dimen/home_action_bar_margin_left" android:paddingRight="@dimen/home_action_bar_margin_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/white" android:id="@id/title_tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/base_input_height" android:layout_marginTop="@dimen/setting_magin_top">
+            <View android:background="@color/setting_border_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/title_content_text_size" android:gravity="right|center" android:id="@id/tv_init_pwd" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/verify_title_margin_top" android:text="@string/modify_pwd_init_pwd" />
+            <EditText android:textSize="@dimen/title_content_text_size" android:textColorHint="@color/setting_text_color" android:id="@id/et_init_pwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/setting_magin_left" android:hint="@string/modify_pwd_init_pwd_hint" android:password="true" android:maxLength="20" android:layout_toRightOf="@id/tv_init_pwd" />
+            <View android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_marginLeft="@dimen/setting_magin_left" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/base_input_height">
+            <TextView android:textSize="@dimen/title_content_text_size" android:gravity="right|center" android:id="@id/tv_new_pwd" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/verify_title_margin_top" android:text="@string/modify_pwd_new_pwd" />
+            <EditText android:textSize="@dimen/title_content_text_size" android:textColorHint="@color/setting_text_color" android:id="@id/et_new_pwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/setting_magin_left" android:hint="@string/modify_pwd_new_pwd_hint" android:password="true" android:maxLength="20" android:layout_toRightOf="@id/tv_new_pwd" />
+            <View android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_marginLeft="@dimen/setting_magin_left" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/base_input_height">
+            <TextView android:textSize="@dimen/title_content_text_size" android:gravity="right|center" android:id="@id/tv_confirm_pwd" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/verify_title_margin_top" android:text="@string/modify_pwd_confirm_pwd" />
+            <EditText android:textSize="@dimen/title_content_text_size" android:textColorHint="@color/setting_text_color" android:id="@id/et_confirm_pwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/setting_magin_left" android:hint="@string/modify_pwd_confirm_pwd_hint" android:password="true" android:maxLength="20" android:layout_toRightOf="@id/tv_confirm_pwd" />
+            <View android:background="@color/setting_border_color" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <Button android:textSize="@dimen/title_text_size" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/modify_pass_sure_bt" android:background="@drawable/green_button" android:layout_width="@dimen/base_rect_button_width" android:layout_height="@dimen/base_rect_button_height" android:layout_marginTop="@dimen/verify_input_margin_bottom" android:text="@string/modify_pass_sure_bt" />
+    </LinearLayout>
+</RelativeLayout>

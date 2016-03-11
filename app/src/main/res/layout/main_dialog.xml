@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/progerss_iv" android:background="@drawable/tutu_loading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/action_bar_height" />
+</RelativeLayout>

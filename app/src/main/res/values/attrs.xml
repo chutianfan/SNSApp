@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="ptrRefreshableViewBackground" format="reference|color" />
+    <attr name="ptrHeaderBackground" format="reference|color" />
+    <attr name="ptrHeaderTextColor" format="reference|color" />
+    <attr name="ptrHeaderSubTextColor" format="reference|color" />
+    <attr name="ptrMode">
+        <flag name="disabled" value="0x00000000" />
+        <flag name="pullFromStart" value="0x00000001" />
+        <flag name="pullFromEnd" value="0x00000002" />
+        <flag name="both" value="0x00000003" />
+        <flag name="manualOnly" value="0x00000004" />
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+    </attr>
+    <attr name="ptrShowIndicator" format="reference|boolean" />
+    <attr name="ptrDrawable" format="reference" />
+    <attr name="ptrDrawableStart" format="reference" />
+    <attr name="ptrDrawableEnd" format="reference" />
+    <attr name="ptrOverScroll" format="reference|boolean" />
+    <attr name="ptrHeaderTextAppearance" format="reference" />
+    <attr name="ptrSubHeaderTextAppearance" format="reference" />
+    <attr name="ptrAnimationStyle">
+        <flag name="rotate" value="0x00000000" />
+        <flag name="flip" value="0x00000001" />
+    </attr>
+    <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+    <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+    <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+    <attr name="ptrAdapterViewBackground" format="reference|color" />
+    <attr name="ptrDrawableTop" format="reference" />
+    <attr name="ptrDrawableBottom" format="reference" />
+    <attr name="minHeadViewHeight" format="dimension" />
+    <attr name="footViewXml" format="reference" />
+    <attr name="footViewShowText" format="boolean" />
+    <attr name="autoRefresh" format="boolean" />
+    <attr name="border_width" format="dimension" />
+    <attr name="border_color" format="color" />
+    <attr name="minTextSize" format="dimension" />
+    <attr name="precision" format="float" />
+    <attr name="sizeToFit" format="boolean" />
+    <attr name="select_bg" format="color" />
+    <attr name="unselect_bg" format="color" />
+    <attr name="select_border_color" format="color" />
+    <attr name="select_cricle_color" format="color" />
+    <attr name="unselect_cricle_color" format="color" />
+    <attr name="isChecked" format="boolean" />
+    <attr name="roundColor" format="color" />
+    <attr name="roundProgressColor" format="color" />
+    <attr name="roundWidth" format="dimension" />
+    <attr name="textColor" format="color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="max" format="integer" />
+    <attr name="textIsDisplayable" format="boolean" />
+    <attr name="style">
+        <enum name="STROKE" value="0" />
+        <enum name="FILL" value="1" />
+    </attr>
+    <attr name="numberPickerStyle" format="reference" />
+    <attr name="numberPickerUpButtonStyle" format="reference" />
+    <attr name="numberPickerDownButtonStyle" format="reference" />
+    <attr name="numberPickerInputTextStyle" format="reference" />
+    <attr name="solidColor" format="reference|color" />
+    <attr name="flingable" format="boolean" />
+    <attr name="selectionDivider" format="reference" />
+    <attr name="selectionDividerHeight" format="dimension" />
+    <attr name="selectionDividersDistance" format="dimension" />
+    <attr name="titlePadding" format="dimension" />
+    <attr name="clipPadding" format="dimension" />
+    <attr name="normaltextColor" format="reference|color" />
+    <attr name="textColorSelected" format="reference|color" />
+    <attr name="textSizeNormal" format="dimension" />
+    <attr name="textSizeSelected" format="dimension" />
+    <attr name="normaltextColor2" format="reference|color" />
+    <attr name="textColorSelected2" format="reference|color" />
+    <attr name="textSizeNormal2" format="dimension" />
+    <attr name="textSizeSelected2" format="dimension" />
+    <attr name="footerLineHeight" format="dimension" />
+    <attr name="footerColor" format="color" />
+    <attr name="footerTriangleHeight" format="dimension" />
+    <attr name="sriv_left_top_corner_radius" format="dimension" />
+    <attr name="sriv_right_top_corner_radius" format="dimension" />
+    <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+    <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+    <attr name="sriv_border_width" format="dimension" />
+    <attr name="sriv_border_color" format="color" />
+    <attr name="sriv_mutate_background" format="boolean" />
+    <attr name="sriv_oval" format="boolean" />
+    <attr name="dividerWidth" format="dimension" />
+</resources>

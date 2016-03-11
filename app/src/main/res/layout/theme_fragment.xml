@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baoyz.swipemenulistview.XListView android:id="@id/lv_pic_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false" style="@style/ThemeFragmentXListView" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/guide_ll" android:background="#ffffffff" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/theme_hot_newest_guide_height" android:layout_alignParentTop="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/selector_hot_newest_text_color" android:gravity="center" android:id="@id/main_hot_tv" android:background="@drawable/theme_hot_newest_guide_selector" android:paddingLeft="@dimen/theme_header_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/hot" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/selector_hot_newest_text_color" android:gravity="center" android:id="@id/main_newest_tv" android:background="@drawable/theme_hot_newest_guide_selector" android:paddingRight="@dimen/theme_header_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/newest" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

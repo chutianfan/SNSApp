@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/rl_empty_tip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/home_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/rl_empty_click_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/empty_tip_margin"
+        android:clickable="true"
+        android:onClick="onClick">
+
+        <TextView
+            android:id="@id/tv_emtpy_tip"
+            android:layout_width="@dimen/empty_tip_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/empty_tip_margin"
+            android:background="@drawable/empty_tip_bg"
+            android:textColor="@color/setting_text_color" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_emtpy_tip"
+            android:src="@drawable/empty_tip_icon" />
+    </RelativeLayout>
+</RelativeLayout>

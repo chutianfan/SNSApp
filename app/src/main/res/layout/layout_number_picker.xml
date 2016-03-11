@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/increment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/np_number_picker_increment_button" style="?attr/numberPickerUpButtonStyle" />
+    <view android:id="@id/numberpicker_input" android:focusable="false" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:editable="false" class="com.gitrose.mobile.picker.NumberPicker$CustomEditText" style="?attr/numberPickerInputTextStyle" />
+    <ImageButton android:id="@id/decrement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/np_number_picker_decrement_button" style="?attr/numberPickerDownButtonStyle" />
+</merge>

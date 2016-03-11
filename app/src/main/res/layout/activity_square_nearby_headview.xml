@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/nearby_ll_paddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/nearby_ll_marginTop">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/yellowline" android:layout_width="4.0dip" android:layout_height="16.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" />
+            <TextView android:textSize="@dimen/comment_content_text_size" android:textColor="@color/setting_title_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/news_nearby_preson" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/nearby_ll_marginleft" android:layout_marginRight="@dimen/nearby_ll_marginleft" android:layout_marginBottom="10.0dip">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.gitrose.mobile.view.CircleImageView android:id="@id/iv_new_icon_left" android:layout_width="@dimen/square_avatar_size" android:layout_height="@dimen/square_avatar_size" android:src="@drawable/img_personal_info_selector" android:layout_alignParentLeft="true" style="@style/avatorCircleImageView" />
+                    <ImageView android:id="@id/iv_auth_left" android:background="@drawable/square_auth" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/iv_new_icon_left" android:layout_alignBottom="@id/iv_new_icon_left" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                    <com.gitrose.mobile.view.CircleImageView android:id="@id/iv_new_icon_1" android:layout_width="@dimen/square_avatar_size" android:layout_height="@dimen/square_avatar_size" android:src="@drawable/img_personal_info_selector" android:layout_alignParentLeft="true" style="@style/avatorCircleImageView" />
+                    <ImageView android:id="@id/iv_auth_1" android:background="@drawable/square_auth" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/iv_new_icon_1" android:layout_alignBottom="@id/iv_new_icon_1" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                    <com.gitrose.mobile.view.CircleImageView android:id="@id/iv_new_icon_2" android:layout_width="@dimen/square_avatar_size" android:layout_height="@dimen/square_avatar_size" android:src="@drawable/img_personal_info_selector" android:layout_alignParentLeft="true" style="@style/avatorCircleImageView" />
+                    <ImageView android:id="@id/iv_auth_2" android:background="@drawable/square_auth" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/iv_new_icon_2" android:layout_alignBottom="@id/iv_new_icon_2" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                    <com.gitrose.mobile.view.CircleImageView android:id="@id/iv_new_icon_3" android:layout_width="@dimen/square_avatar_size" android:layout_height="@dimen/square_avatar_size" android:src="@drawable/img_personal_info_selector" android:layout_alignParentLeft="true" style="@style/avatorCircleImageView" />
+                    <ImageView android:id="@id/iv_auth_3" android:background="@drawable/square_auth" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/iv_new_icon_3" android:layout_alignBottom="@id/iv_new_icon_3" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                    <com.gitrose.mobile.view.CircleImageView android:id="@id/iv_new_icon_4" android:layout_width="@dimen/square_avatar_size" android:layout_height="@dimen/square_avatar_size" android:src="@drawable/img_personal_info_selector" android:layout_alignParentLeft="true" style="@style/avatorCircleImageView" />
+                    <ImageView android:id="@id/iv_auth_4" android:background="@drawable/square_auth" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/iv_new_icon_4" android:layout_alignBottom="@id/iv_new_icon_4" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                    <com.gitrose.mobile.view.CircleImageView android:id="@id/iv_new_icon_5" android:layout_width="@dimen/square_avatar_size" android:layout_height="@dimen/square_avatar_size" android:src="@drawable/img_personal_info_selector" android:layout_alignParentLeft="true" style="@style/avatorCircleImageView" />
+                    <ImageView android:id="@id/iv_auth_5" android:background="@drawable/square_auth" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/iv_new_icon_5" android:layout_alignBottom="@id/iv_new_icon_5" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:textSize="@dimen/comment_content_text_size" android:textColor="@color/nearby_text_color" android:id="@id/bt_nearby" android:background="@drawable/button_nearby_more" android:layout_width="90.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="3.0dip" android:text="@string/news_nearby_more" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

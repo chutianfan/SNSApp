@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/main_pull_refresh_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/friends_action_bar" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height">
+        <ImageView android:gravity="center_vertical" android:id="@id/friends_back" android:paddingLeft="@dimen/distance_big_content" android:paddingRight="@dimen/distance_big_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onActionBar" />
+        <ImageView android:id="@id/friends_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/distance_small_content" android:src="@drawable/friends_search_add_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onActionBar" />
+        <TextView android:textSize="@dimen/friends_text_big_size" android:textColor="@color/white" android:gravity="center" android:id="@id/friends_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="好友" android:layout_toLeftOf="@id/friends_add" android:layout_toRightOf="@id/friends_back" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:background="@color/home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/friends_action_bar">
+        <include layout="@layout/empty_tip_layout" />
+        <com.baoyz.swipemenulistview.SwipeMenuListView android:id="@id/friends_listview" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" style="@style/OtherXListView" />
+    </FrameLayout>
+</RelativeLayout>

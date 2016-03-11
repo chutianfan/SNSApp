@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="com_sina_weibo_sdk_loginview_default_style" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/com_sina_weibo_sdk_loginview_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/com_sina_weibo_sdk_loginview_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/com_sina_weibo_sdk_button_blue</item>
+        <item name="android:paddingLeft">@dimen/com_sina_weibo_sdk_loginview_padding_left</item>
+        <item name="android:paddingTop">@dimen/com_sina_weibo_sdk_loginview_padding_top</item>
+        <item name="android:paddingRight">@dimen/com_sina_weibo_sdk_loginview_padding_right</item>
+        <item name="android:paddingBottom">@dimen/com_sina_weibo_sdk_loginview_padding_bottom</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/com_sina_weibo_sdk_login_with_weibo_account</item>
+        <item name="android:drawableLeft">@drawable/ic_com_sina_weibo_sdk_logo</item>
+        <item name="android:drawablePadding">@dimen/com_sina_weibo_sdk_loginview_compound_drawable_padding</item>
+    </style>
+    <style name="com_sina_weibo_sdk_loginview_silver_style" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/com_sina_weibo_sdk_loginview_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff4b5164</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/com_sina_weibo_sdk_button_grey</item>
+        <item name="android:paddingLeft">@dimen/com_sina_weibo_sdk_loginview_padding_left</item>
+        <item name="android:paddingTop">@dimen/com_sina_weibo_sdk_loginview_padding_top</item>
+        <item name="android:paddingRight">@dimen/com_sina_weibo_sdk_loginview_padding_right</item>
+        <item name="android:paddingBottom">@dimen/com_sina_weibo_sdk_loginview_padding_bottom</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/com_sina_weibo_sdk_login_with_weibo_account</item>
+        <item name="android:drawableLeft">@drawable/ic_com_sina_weibo_sdk_logo</item>
+        <item name="android:drawablePadding">@dimen/com_sina_weibo_sdk_loginview_compound_drawable_padding</item>
+    </style>
+    <style name="bottom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="PopMenuAnimation">
+        <item name="android:windowEnterAnimation">@anim/main_translatey100to0</item>
+        <item name="android:windowExitAnimation">@anim/main_translatey0to100</item>
+    </style>
+    <style name="CommentPopAnimation">
+        <item name="android:windowEnterAnimation">@anim/comment_pop_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/comment_pop_scale_out</item>
+    </style>
+    <style name="avatorCircleImageView">
+        <item name="border_width">@dimen/home_avator_broder_width</item>
+        <item name="border_color">#ffffffff</item>
+    </style>
+    <style name="leftAvatorCircleImageView">
+        <item name="border_width">@dimen/home_left_avator_broder_width</item>
+        <item name="border_color">#ffffffff</item>
+    </style>
+    <style name="HomeXListView">
+        <item name="minHeadViewHeight">@dimen/action_bar_height</item>
+        <item name="autoRefresh">false</item>
+    </style>
+    <style name="HomeFollowXListView">
+        <item name="minHeadViewHeight">@dimen/action_bar_height</item>
+        <item name="autoRefresh">true</item>
+    </style>
+    <style name="SquareXListView">
+        <item name="minHeadViewHeight">@dimen/square_menu_height</item>
+        <item name="autoRefresh">false</item>
+    </style>
+    <style name="ThemeFragmentXListView">
+        <item name="minHeadViewHeight">0.0dip</item>
+        <item name="autoRefresh">false</item>
+    </style>
+    <style name="normalXListView">
+        <item name="minHeadViewHeight">@dimen/action_bar_height</item>
+        <item name="autoRefresh">false</item>
+    </style>
+    <style name="OtherXListView">
+        <item name="footViewXml">@layout/xlistview_hidden_footer</item>
+        <item name="footViewShowText">false</item>
+    </style>
+    <style name="AiThemeSample">
+        <item name="numberPickerStyle">@style/AiWidget.NumberPicker</item>
+        <item name="numberPickerUpButtonStyle">@style/AiWidget.ImageButton.NumberPickerUpButton</item>
+        <item name="numberPickerDownButtonStyle">@style/AiWidget.ImageButton.NumberPickerDownButton</item>
+        <item name="numberPickerInputTextStyle">@style/AiWidget.EditText.NumberPickerInputText</item>
+    </style>
+    <style name="AiWidget">
+        <item name="android:textAppearance">?android:textAppearance</item>
+    </style>
+    <style name="AiWidget.NumberPicker" parent="@style/AiWidget">
+        <item name="android:orientation">vertical</item>
+        <item name="android:fadingEdge">vertical</item>
+        <item name="android:fadingEdgeLength">@dimen/login_ll_padding_left</item>
+        <item name="android:maxHeight">@dimen/base_bottom_dialog_height</item>
+        <item name="android:minWidth">55.0dip</item>
+        <item name="solidColor">@android:color/transparent</item>
+        <item name="flingable">true</item>
+        <item name="selectionDivider">@drawable/pick_selection_divider</item>
+        <item name="selectionDividerHeight">1.0dip</item>
+    </style>
+    <style name="AiWidget.EditText.NumberPickerInputText" parent="@style/AiWidget.EditText">
+        <item name="android:textSize">@dimen/title_content_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">2.0sp</item>
+        <item name="android:paddingTop">13.0sp</item>
+        <item name="android:paddingRight">2.0sp</item>
+        <item name="android:paddingBottom">13.0sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="AiWidget.EditText" parent="@style/AiWidget">
+        <item name="android:textAppearance">?android:textAppearanceMediumInverse</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="AiWidget.ImageButton.NumberPickerUpButton" parent="@style/AiWidget.ImageButton">
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">16.0dip</item>
+        <item name="android:paddingBottom">22.0dip</item>
+        <item name="android:src">@drawable/np_numberpicker_up_btn_holo_light</item>
+    </style>
+    <style name="AiWidget.ImageButton.NumberPickerDownButton" parent="@style/AiWidget.ImageButton">
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">22.0dip</item>
+        <item name="android:paddingBottom">16.0dip</item>
+        <item name="android:src">@drawable/np_numberpicker_down_btn_holo_light</item>
+    </style>
+    <style name="AiWidget.ImageButton" parent="@style/AiWidget">
+        <item name="android:background">@android:drawable/btn_default</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/push_down_in</item>
+        <item name="android:windowExitAnimation">@anim/push_down_out</item>
+    </style>
+    <style name="custom_dialog_pic_zoom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="load_progress">
+        <item name="roundColor">@color/load_progress_bg</item>
+        <item name="roundProgressColor">@color/load_progress_color</item>
+        <item name="roundWidth">@dimen/load_progress_border_width</item>
+    </style>
+    <style name="Dialog_loading_noDim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Dialog_loading" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="load_progress_green">
+        <item name="roundColor">@color/defalut_avatar_bg_color</item>
+        <item name="roundProgressColor">@color/action_bar_bg</item>
+        <item name="roundWidth">@dimen/load_progress_border_width</item>
+    </style>
+    <style name="setting_load_progress_green">
+        <item name="roundColor">@color/defalut_avatar_bg_color</item>
+        <item name="roundProgressColor">@color/action_bar_bg</item>
+        <item name="roundWidth">@dimen/setting_load_progress_border_width</item>
+    </style>
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="load_progress_2">
+        <item name="roundColor">@color/load_progress_bg_private</item>
+        <item name="roundProgressColor">@color/load_progress_color_private</item>
+        <item name="roundWidth">@dimen/load_progress_border_width_private</item>
+    </style>
+    <style name="report_RadioButtonStyles">
+        <item name="android:button">@drawable/select_button</item>
+    </style>
+    <style name="weekName">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Icon">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#b0000000</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+    <style name="AiTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="numberPickerStyle">@style/AiWidget.NumberPicker</item>
+        <item name="numberPickerUpButtonStyle">@style/AiWidget.ImageButton.NumberPickerUpButton</item>
+        <item name="numberPickerDownButtonStyle">@style/AiWidget.ImageButton.NumberPickerDownButton</item>
+        <item name="numberPickerInputTextStyle">@style/AiWidget.EditText.NumberPickerInputText</item>
+    </style>
+    <style name="umeng_socialize_action_bar_itemlayout">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="umeng_socialize_action_bar_item_im">
+        <item name="android:layout_width">25.0dip</item>
+        <item name="android:layout_height">25.0dip</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="umeng_socialize_action_bar_item_tv">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:text">999</item>
+    </style>
+    <style name="umeng_socialize_popup_dialog_anim" parent="@style/umeng_socialize_popup_dialog">
+        <item name="android:windowAnimationStyle">@style/umeng_socialize_dialog_animations</item>
+    </style>
+    <style name="umeng_socialize_popup_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="umeng_socialize_dialog_animations">
+        <item name="android:windowEnterAnimation">@anim/umeng_socialize_slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/umeng_socialize_slide_out_from_bottom</item>
+    </style>
+    <style name="umeng_socialize_dialog_anim_fade">
+        <item name="android:windowEnterAnimation">@anim/umeng_socialize_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/umeng_socialize_fade_out</item>
+    </style>
+    <style name="umeng_socialize_shareboard_animation">
+        <item name="android:windowEnterAnimation">@anim/umeng_socialize_shareboard_animation_in</item>
+        <item name="android:windowExitAnimation">@anim/umeng_socialize_shareboard_animation_out</item>
+    </style>
+    <style name="Theme.UMDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.UMDefault" parent="@android:style/Theme.NoTitleBar" />
+    <style name="umeng_socialize_divider">
+        <item name="android:background">@color/umeng_socialize_divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="umeng_socialize_list_item">
+        <item name="android:background">@color/umeng_socialize_list_item_bgcolor</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">55.0dip</item>
+    </style>
+    <style name="umeng_socialize_edit_padding">
+        <item name="android:background">@color/umeng_socialize_list_item_bgcolor</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:layout_marginTop">6.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+        <item name="android:layout_marginBottom">6.0dip</item>
+    </style>
+    <style name="DashboardButton">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/accent_1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/umeng_strock_bg_1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:height">100.0dip</item>
+        <item name="android:width">100.0dip</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="ActionBar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+    </style>
+    <style name="ActionBarItem">
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">@dimen/actionbar_item_width</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:layout_marginLeft">1.0px</item>
+    </style>
+    <style name="ActionBarHomeItem" parent="@style/ActionBarItem">
+        <item name="android:layout_marginLeft">0.0px</item>
+        <item name="android:layout_marginRight">1.0px</item>
+    </style>
+    <style name="ActionBarHomeLogo">
+        <item name="android:layout_marginLeft">0.0px</item>
+        <item name="android:layout_marginRight">1.0px</item>
+    </style>
+    <style name="ActionBarProgressBar" parent="@android:style/Widget.ProgressBar.Small" />
+    <style name="umeng_xp_grad_but">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/umeng_xp_btn_gradient_grey</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="umeng_xp_download_but">
+        <item name="android:textColor">#ffeeeeee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/umeng_xp_download_gradient_grey</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="umeng_xp_more_but">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/umeng_xp_btn_gradient_dark_grey</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="umeng_xp_dialog_but">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/umeng_xp_btn_gradient_grey</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="umeng_xp_dialog_download">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/umeng_xp_selector_download</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="umeng_xp_dialog_cancel">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/umeng_xp_selector_cancel</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="umeng_xp_dialog_download_window" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/umeng_xp_dialog_animations</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="umeng_xp_dialog_animations">
+        <item name="android:windowEnterAnimation">@anim/umeng_xp_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/umeng_xp_fade_out</item>
+    </style>
+</resources>

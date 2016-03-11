@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/live_avatar_item_height" android:layout_height="@dimen/live_avatar_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gitrose.mobile.view.CircleImageView android:id="@id/qav_member_item_avatar_iv" android:layout_width="@dimen/live_avatar_item_height" android:layout_height="@dimen/live_avatar_item_height" />
+    <ImageView android:id="@id/iv_isauth" android:background="@drawable/personal_isauth" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/qav_member_item_avatar_iv" android:layout_alignBottom="@id/qav_member_item_avatar_iv" />
+</RelativeLayout>

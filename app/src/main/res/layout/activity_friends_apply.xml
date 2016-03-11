@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/friends_action_bar" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:gravity="center_vertical" android:id="@id/action_back" android:paddingLeft="@dimen/distance_big_content" android:paddingRight="@dimen/distance_big_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/back_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onActionBar" />
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/action_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/friends_apply_action_title" android:layout_centerInParent="true" />
+        <Button android:textSize="@dimen/title_text_size" android:textColor="@drawable/personal_text_bg" android:gravity="center_vertical" android:id="@id/action_edit" android:background="#00000000" android:paddingLeft="@dimen/distance_big_content" android:paddingRight="@dimen/distance_big_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/friends_apply_action_edit" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onActionBar" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/edit_bar" android:background="@drawable/personal_bottom_add_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/edit_all" android:background="@drawable/rect_border_home_color" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/friends_apply_edit_all" android:layout_weight="1.0" android:onClick="onClick" />
+        <View android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/edit_del" android:background="@drawable/rect_border_home_color" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/friends_apply_edit_del" android:layout_weight="1.0" android:onClick="onClick" />
+    </LinearLayout>
+    <FrameLayout android:background="@color/home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/edit_bar" android:layout_below="@id/friends_action_bar" android:layout_alignWithParentIfMissing="true">
+        <include layout="@layout/empty_tip_layout" />
+        <com.baoyz.swipemenulistview.XListView android:id="@id/apply_list" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@null" style="@style/OtherXListView" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/private_chat_ll_send" android:background="@drawable/chat_round_border" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/rl_chat_bottom" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/private_chat_iv_face" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/chat_emotion_bg" android:layout_centerVertical="true" android:onClick="onClick" />
+            <EditText android:id="@id/et_chat_content" android:background="@drawable/round_border" android:paddingLeft="7.0dip" android:paddingTop="5.0dip" android:paddingRight="7.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:maxHeight="@dimen/private_edit_ll_max_height" android:minHeight="@dimen/private_edit_ll_height" android:hint="@string/friends_apply_et_chat_content" android:maxEms="20" android:layout_toLeftOf="@id/rl_chat_right" android:layout_toRightOf="@id/private_chat_iv_face" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/rl_chat_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <Button android:textColor="@color/send_text_color" android:id="@id/btn_send_chat" android:background="@drawable/send_round_border" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/friends_apply_btn_send_chat" android:layout_centerVertical="true" android:onClick="onClick" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_face_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_below="@id/rl_chat_bottom" />
+    </RelativeLayout>
+</RelativeLayout>

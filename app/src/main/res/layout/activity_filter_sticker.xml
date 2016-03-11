@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header_ll" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="@dimen/recoder_top_height">
+        <ImageView android:id="@id/back_iv" android:padding="@dimen/forget_margin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/black_back_iv_bg" android:scaleType="fitCenter" android:onClick="onClick" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/theme_title_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="@color/action_bar_bg" android:gravity="center" android:layout_gravity="right" android:id="@id/next_tv" android:paddingLeft="@dimen/forget_margin" android:paddingRight="@dimen/forget_margin" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/make_tv" android:onClick="onClick" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/gpu_fl" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_below="@id/header_ll">
+        <jp.co.cyberagent.android.gpuimage.GPUImageView android:layout_gravity="center" android:id="@id/gpuimage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/gpu_fl">
+        <HorizontalScrollView android:id="@id/filter_list_hsv" android:background="@color/black" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/filter_list_ll" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </HorizontalScrollView>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/buttom_ll" android:background="#ff292f2d" android:paddingLeft="50.0dip" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/filter_and_sticker_buttom_height" android:layout_below="@id/filter_list_hsv">
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/filter_button_ll" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textColor="@color/selector_text_color" android:gravity="center" android:id="@id/filter_tv" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/filter" android:drawableTop="@drawable/img_filter_guide_selector" android:onClick="onClick" />
+                <View android:layout_gravity="bottom" android:id="@id/filter_line" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/sticker_button_ll" android:background="#ff292f2d" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textColor="@color/selector_text_color" android:gravity="center" android:id="@id/sticker_tv" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/sticker" android:drawableTop="@drawable/img_sticker_guide_selector" android:onClick="onClick" />
+                <View android:id="@id/sticker_line" android:background="@color/action_bar_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

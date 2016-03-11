@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tab1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+        <ListView android:id="@id/list1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#ffdedfde" android:dividerHeight="1.0px" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tab2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+        <ListView android:id="@id/list2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#ffdedfde" android:dividerHeight="1.0px" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tab3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+        <ListView android:id="@id/list3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#ffdedfde" android:dividerHeight="1.0px" />
+    </RelativeLayout>
+</FrameLayout>

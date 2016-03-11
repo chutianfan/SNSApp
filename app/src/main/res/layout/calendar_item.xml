@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/home_release_time_color" android:gravity="center" android:id="@id/tvtext" android:layout_width="@dimen/square_calendar_height" android:layout_height="@dimen/square_calendar_height" />
+    <ImageView android:gravity="center" android:id="@id/iv_sign" android:layout_width="@dimen/square_calendar_height" android:layout_height="@dimen/square_calendar_height" android:src="@drawable/square_sign_bg" />
+</FrameLayout>

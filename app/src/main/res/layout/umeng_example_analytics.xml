@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <AbsoluteLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:id="@id/umeng_example_analytics_online_config" android:layout_width="150.0dip" android:layout_height="50.0dip" android:text="OnlineConfig" android:layout_x="0.0dip" android:layout_y="0.0dip" android:onClick="onButtonClick" />
+        <Button android:id="@id/umeng_example_analytics_make_crash" android:layout_width="150.0dip" android:layout_height="50.0dip" android:text="Make me crash!!" android:layout_x="160.0dip" android:layout_y="0.0dip" android:onClick="onButtonClick" />
+        <Button android:id="@id/umeng_example_analytics_ekv" android:layout_width="150.0dip" android:layout_height="50.0dip" android:text="K-V Event" android:layout_x="160.0dip" android:layout_y="54.0dip" android:onClick="onButtonClick" />
+        <Button android:id="@id/umeng_example_analytics_event" android:layout_width="150.0dip" android:layout_height="50.0dip" android:text="Event" android:layout_x="0.0dip" android:layout_y="54.0dip" android:onClick="onButtonClick" />
+        <Button android:id="@id/umeng_example_analytics_event_begin" android:layout_width="150.0dip" android:layout_height="50.0dip" android:text="Event Begin" android:layout_x="0.0dip" android:layout_y="104.0dip" android:onClick="onButtonClick" />
+        <Button android:id="@id/umeng_example_analytics_event_end" android:layout_width="150.0dip" android:layout_height="50.0dip" android:text="Event End" android:layout_x="160.0dip" android:layout_y="104.0dip" android:onClick="onButtonClick" />
+        <Button android:id="@id/umeng_example_analytics_js_analytic" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="Js call java Example in Webivew" android:layout_x="0.0dip" android:layout_y="262.0dip" android:onClick="onButtonClick" />
+        <Button android:id="@id/umeng_example_analytics_fragment_tabs" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="Page in Fragment Tabs" android:layout_x="0.0dip" android:layout_y="313.0dip" android:onClick="onButtonClick" />
+        <Button android:id="@id/umeng_example_analytics_fragment_stack" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="Page in Fragment Stack" android:layout_x="0.0dip" android:layout_y="362.0dip" android:onClick="onButtonClick" />
+        <Button android:id="@id/umeng_example_analytics_duration" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="Duration" android:layout_x="0.0dip" android:layout_y="165.0dip" android:onClick="onButtonClick" />
+        <Button android:id="@id/umeng_example_analytics_flush" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="send cache message ,right now !" android:layout_x="0.0dip" android:layout_y="215.0dip" android:onClick="onButtonClick" />
+    </AbsoluteLayout>
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_surface_parent" android:background="@color/recoder_top_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <SurfaceView android:id="@id/camera_surfaceview" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/crop_border_view_ll" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/recoder_top_bg" android:layout_width="fill_parent" android:layout_height="@dimen/recoder_top_height" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/take_photo_close_iv" android:paddingLeft="@dimen/recoder_close_left_margin" android:paddingRight="@dimen/recoder_close_left_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/crop_cancel_button" android:onClick="onClick" />
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/take_photo_switch_flush_iv" android:paddingLeft="@dimen/recoder_flash_right_margin" android:paddingRight="@dimen/recoder_flash_right_margin" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_open_tip" android:drawableLeft="@drawable/flush_open_img" android:drawablePadding="5.0dip" android:onClick="onClick" />
+            <ImageView android:id="@id/take_photo_switch_carmera_iv" android:paddingRight="@dimen/recoder_switch_camera_right_margin" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recoder_switch_carmera_img" android:onClick="onClick" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/recoder_top_bg" android:layout_width="fill_parent" android:layout_height="@dimen/music_and_cover_guide_height" android:layout_above="@id/rl_photo_bottom" />
+    <RelativeLayout android:id="@id/rl_photo_bottom" android:background="#ff1f2422" android:layout_width="fill_parent" android:layout_height="@dimen/recoder_buttom_height" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/choose_pic_iv" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="@dimen/recoder_left_action_left_margin" android:src="@drawable/photo_default_img" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" />
+        <ImageView android:id="@id/delete_pic_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/recoder_left_action_left_margin" android:src="@drawable/delete_video_img" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" />
+        <ImageView android:id="@id/take_ptoto_menu_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/take_photo_menu_img" android:layout_centerInParent="true" android:onClick="onClick" />
+        <ImageView android:id="@id/switch_make_video_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/recoder_left_action_left_margin" android:src="@drawable/change2recoder_video_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+        <ImageView android:id="@id/ok_pic_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/recoder_right_action_right_margin" android:src="@drawable/ok_video_img" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+    </RelativeLayout>
+    <ImageView android:id="@id/get_img_iv" android:background="#ffff0000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/recoder_top_height" android:scaleType="centerCrop" android:layout_alignParentTop="true" />
+</RelativeLayout>

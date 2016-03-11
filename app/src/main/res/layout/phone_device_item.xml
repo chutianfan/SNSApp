@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/title_content_text_size" android:textColor="@color/phone_device_text_color" android:gravity="center" android:id="@id/tv_device_type" android:background="@drawable/phone_device_anniu_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="不显示" />
+</RelativeLayout>

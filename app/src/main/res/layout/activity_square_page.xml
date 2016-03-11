@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@id/rl_square_search"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg">
+
+        <LinearLayout
+            android:id="@id/ll_square_search"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/search_top_height"
+            android:layout_marginBottom="@dimen/search_top_margintop"
+            android:layout_marginLeft="@dimen/home_head_view_margin"
+            android:layout_marginRight="@dimen/home_head_view_margin"
+            android:layout_marginTop="@dimen/search_top_margintop"
+            android:layout_toLeftOf="@id/tv_search_cancle"
+            android:background="@drawable/square_search_rect_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/search_top_height"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerInside"
+                android:src="@drawable/search" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/square_search_hint"
+                android:singleLine="true"
+                android:textColor="@color/setting_title_text_color"
+                android:textSize="@dimen/search_with_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/tv_search_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10.0dip"
+            android:text="@string/cancle"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_content_text_size" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@id/square_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_square_search"
+        android:background="@color/home_bg" />
+
+    <!--<RelativeLayout-->
+        <!--android:id="@id/rl_search"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:visibility="gone">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@id/rl_search_top"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="@dimen/action_bar_height"-->
+            <!--android:background="@color/action_bar_bg">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="@dimen/search_top_height"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginBottom="@dimen/search_top_margintop"-->
+                <!--android:layout_marginLeft="@dimen/home_head_view_margin"-->
+                <!--android:layout_marginTop="@dimen/search_top_margintop"-->
+                <!--android:layout_toLeftOf="@id/tv_search_cancle"-->
+                <!--android:background="@drawable/square_search_rect_border"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="@dimen/search_top_height"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:scaleType="centerInside"-->
+                    <!--android:src="@drawable/search" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@id/et_search_content"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:background="@null"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:hint="@string/square_search_hint"-->
+                    <!--android:imeOptions="actionSearch"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textColor="@color/setting_title_text_color"-->
+                    <!--android:textSize="@dimen/search_with_text_size" />-->
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:id="@id/tv_search_cancle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:padding="10.0dip"-->
+                <!--android:text="@string/cancle"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/title_content_text_size" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@id/rl_search_middle"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_below="@id/rl_search_top"-->
+            <!--android:background="@color/white">-->
+
+            <!--<com.baoyz.swipemenulistview.XListView-->
+                <!--android:id="@id/lv_square_search"-->
+                <!--style="@style/ThemeFragmentXListView"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:divider="@null"-->
+                <!--android:footerDividersEnabled="false"-->
+                <!--android:headerDividersEnabled="false"-->
+                <!--android:scrollbars="none" />-->
+
+            <!--<TextView-->
+                <!--android:id="@id/tv_search_null_hint"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_marginTop="100.0dip"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:text="@string/square_search_null_tip"-->
+                <!--android:textColor="@color/setting_text_color"-->
+                <!--android:textSize="@dimen/title_content_text_size"-->
+                <!--android:visibility="invisible" />-->
+        <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+</RelativeLayout>

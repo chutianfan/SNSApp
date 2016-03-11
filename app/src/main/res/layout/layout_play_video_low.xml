@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/low_video_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gitrose.mobile.view.LowVideoView android:layout_gravity="center" android:id="@id/video_view_low" android:background="@color/home_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <VideoView android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.gitrose.mobile.view.RoundProgressBar android:layout_gravity="center" android:id="@id/pb_loading" android:layout_width="@dimen/load_progress_width" android:layout_height="@dimen/load_progress_width" android:src="@drawable/icon_reload" android:scaleType="centerInside" style="@style/load_progress" />
+        <ProgressBar android:layout_gravity="top" android:id="@id/pb_video_load" android:layout_width="fill_parent" android:layout_height="@dimen/video_progress_height" android:max="100" android:progressDrawable="@drawable/video_progress_bar_bg" android:layout_below="@id/rl_topic_head" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </com.gitrose.mobile.view.LowVideoView>
+    <ImageView android:layout_gravity="right" android:id="@id/img_close_video" android:padding="@dimen/topic_item_foot_interval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/topic_detail_item_margin" android:layout_marginRight="@dimen/topic_detail_item_margin" android:src="@drawable/comment_emotion_close_bg" />
+</FrameLayout>

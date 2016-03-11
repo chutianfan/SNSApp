@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dialog_bg"
+    android:orientation="vertical"
+    android:paddingBottom="10.0dip">
+
+    <RelativeLayout
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/title_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/photo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@id/take_photo_close"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/home_head_icon_magin"
+            android:paddingRight="@dimen/home_head_icon_magin"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_eightteen" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/share_tv_block"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/white_round_broder_selector"
+        android:gravity="center"
+        android:text="@string/del_photo"
+        android:textColor="@color/setting_title_text_color"
+        android:textSize="@dimen/title_text_size" />
+
+    <TextView
+        android:id="@id/share_tv_report"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/white_round_broder_selector"
+        android:gravity="center"
+        android:text="@string/take_photo"
+        android:textColor="@color/setting_title_text_color"
+        android:textSize="@dimen/title_text_size" />
+
+    <TextView
+        android:id="@id/share_tv_fav"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/white_round_broder_selector"
+        android:gravity="center"
+        android:text="@string/sel_library"
+        android:textColor="@color/setting_title_text_color"
+        android:textSize="@dimen/title_text_size" />
+
+</LinearLayout>

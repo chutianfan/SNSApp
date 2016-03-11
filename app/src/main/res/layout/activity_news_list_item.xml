@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@id/tv_news_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_bg"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="@dimen/home_action_bar_margin_left"
+        android:paddingTop="5.0dip"
+        android:text="@string/history_news_tip"
+        android:textColor="@color/home_release_time_color"
+        android:textSize="@dimen/title_content_text_size" />
+
+    <LinearLayout
+        android:id="@id/private_list_item_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_news_status"
+        android:background="@drawable/base_item_bg_selector"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/tips_list_item_rl_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/new_list_item_magin_bottom"
+            android:layout_marginTop="@dimen/home_action_bar_margin_left">
+
+            <RelativeLayout
+                android:id="@id/tips_list_item_rl_avatar"
+                android:layout_width="@dimen/default_avatar_parent_heigh"
+                android:layout_height="@dimen/friends_user_head_size">
+
+                <com.gitrose.mobile.view.CircleImageView
+                    android:id="@id/tips_list_item_iv_avatar"
+                    android:layout_width="@dimen/friends_user_head_size"
+                    android:layout_height="@dimen/friends_user_head_size"
+                    android:layout_marginLeft="10.0dip" />
+
+                <ImageView
+                    android:id="@id/iv_isauth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tips_list_item_iv_avatar"
+                    android:layout_alignRight="@id/tips_list_item_iv_avatar"
+                    android:background="@drawable/personal_isauth"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@id/tips_list_item_iv_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3.0dip"
+                    android:background="@drawable/news_white"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_toRightOf="@id/tips_list_item_rl_avatar">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/tips_item_right_width"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@id/tips_list_item_tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLength="12"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/topic_username_color"
+                            android:textSize="@dimen/title_content_text_size" />
+
+                        <ImageView
+                            android:id="@id/tips_list_item_iv_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10.0dip"
+                            android:src="@drawable/userhonorlevel1"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@id/tips_list_item_content_rl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="45.0dip"
+                        android:paddingBottom="5.0dip"
+                        android:paddingTop="5.0dip">
+
+                        <com.gitrose.mobile.view.TextViewFixTouchConsume
+                            android:id="@id/tv_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/tips_item_right_width"
+                            android:text=""
+                            android:textColor="@color/home_release_time_color"
+                            android:textSize="@dimen/content_text_size"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@id/tips_list_item_content_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/tips_item_right_width"
+                            android:adjustViewBounds="true"
+                            android:maxHeight="@dimen/topic_detail_img_height"
+                            android:maxWidth="@dimen/topic_detail_img_height"
+                            android:src="@drawable/icon_comment_detail_fav_select"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@id/tips_list_item_replay_content_ll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:background="@drawable/topic_detail_comment_bg"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/home_comment_switch_margin"
+                            android:text="@string/wowo"
+                            android:textColor="@color/topic_username_color"
+                            android:textSize="@dimen/content_text_size" />
+
+                        <TextView
+                            android:id="@id/tips_list_item_replay_content_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/home_comment_switch_margin"
+                            android:paddingLeft="@dimen/home_comment_switch_margin"
+                            android:paddingRight="@dimen/home_comment_switch_margin"
+                            android:textColor="@color/home_release_time_color"
+                            android:textSize="@dimen/content_text_size" />
+
+                        <ImageView
+                            android:id="@id/tips_list_item_replay_content_iv"
+                            android:layout_width="@dimen/topic_detail_img_height"
+                            android:layout_height="@dimen/topic_detail_img_height"
+                            android:layout_marginBottom="@dimen/home_comment_switch_margin"
+                            android:layout_marginLeft="@dimen/home_comment_switch_margin"
+                            android:layout_marginRight="@dimen/home_comment_switch_margin" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@id/tips_list_item_tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/home_release_time_color"
+                        android:textSize="@dimen/date_text_size" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@id/item_right_rl"
+                    android:layout_width="@dimen/tips_item_right_width"
+                    android:layout_height="@dimen/tips_item_right_like_rl_height"
+                    android:layout_alignParentRight="true">
+
+                    <RelativeLayout
+                        android:id="@id/tips_list_item_like_rl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@id/tips_list_item_like_homecover_iv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/tips_item_right_home_cover_height"
+                            android:layout_alignParentRight="true"
+                            android:scaleType="centerCrop" />
+
+                        <com.gitrose.mobile.view.CircleImageView
+                            android:id="@id/tips_list_item_like_avatar_iv"
+                            android:layout_width="@dimen/tips_item_right_like_avatar_height"
+                            android:layout_height="@dimen/tips_item_right_like_avatar_height"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@id/tips_list_item_topic_rl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/tips_item_right_width"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@id/tips_list_item_topic_iv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@id/tips_list_item_topic_video_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/personal_video_bt" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@id/tips_list_item_follow_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="70.0dip"
+            android:background="@color/setting_divider_color" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/base_item_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/setting_divider_color" android:id="@id/apply_friend_news" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="msg" android:layout_toLeftOf="@id/apply_friend_button" android:layout_alignParentLeft="true" />
+</RelativeLayout>

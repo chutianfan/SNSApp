@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/live_present_num_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/present_num_ll" android:background="@drawable/round_border_big_present_num" android:paddingLeft="@dimen/live_present_num_margin_left" android:paddingTop="@dimen/live_present_num_margin_top" android:paddingRight="@dimen/live_present_num_margin_left" android:paddingBottom="@dimen/live_present_num_margin_top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/live_present_num_ll_1" android:layout_width="@dimen/live_present_num_width" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/live_present_num_button" android:layout_width="@dimen/live_present_num_width" android:layout_height="@dimen/live_present_num_width" android:src="@drawable/live_num_1" android:scaleType="centerInside" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/setting_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/live_present_num_text_margin_top" android:text="@string/live_present_num_1" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/live_present_num_ll_10" android:layout_width="@dimen/live_present_num_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/live_present_num_item_margin" android:layout_marginRight="@dimen/live_present_num_item_margin">
+                    <ImageView android:background="@drawable/live_present_num_button" android:layout_width="@dimen/live_present_num_width" android:layout_height="@dimen/live_present_num_width" android:src="@drawable/live_num_10" android:scaleType="centerInside" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/setting_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/live_present_num_text_margin_top" android:text="@string/live_present_num_10" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/live_present_num_ll_66" android:layout_width="@dimen/live_present_num_width" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/live_present_num_button" android:layout_width="@dimen/live_present_num_width" android:layout_height="@dimen/live_present_num_width" android:src="@drawable/live_num_66" android:scaleType="centerInside" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/setting_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/live_present_num_text_margin_top" android:text="@string/live_present_num_66" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/live_present_num_margin_left">
+                <LinearLayout android:orientation="vertical" android:id="@id/live_present_num_ll_188" android:layout_width="@dimen/live_present_num_width" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/live_present_num_button" android:layout_width="@dimen/live_present_num_width" android:layout_height="@dimen/live_present_num_width" android:src="@drawable/live_num_188" android:scaleType="centerInside" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/setting_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/live_present_num_text_margin_top" android:text="@string/live_present_num_188" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/live_present_num_ll_520" android:layout_width="@dimen/live_present_num_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/live_present_num_item_margin" android:layout_marginRight="@dimen/live_present_num_item_margin">
+                    <ImageView android:background="@drawable/live_present_num_button" android:layout_width="@dimen/live_present_num_width" android:layout_height="@dimen/live_present_num_width" android:src="@drawable/live_num_520" android:scaleType="centerInside" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/setting_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/live_present_num_text_margin_top" android:text="@string/live_present_num_520" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/live_present_num_ll_1314" android:layout_width="@dimen/live_present_num_width" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/live_present_num_button" android:layout_width="@dimen/live_present_num_width" android:layout_height="@dimen/live_present_num_width" android:src="@drawable/live_num_1314" android:scaleType="centerInside" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/setting_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/live_present_num_text_margin_top" android:text="@string/live_present_num_1314" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/live_present_num_margin_left">
+                <LinearLayout android:orientation="vertical" android:id="@id/live_present_num_ll_3344" android:layout_width="@dimen/live_present_num_width" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/live_present_num_button" android:layout_width="@dimen/live_present_num_width" android:layout_height="@dimen/live_present_num_width" android:src="@drawable/live_num_3344" android:scaleType="centerInside" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/setting_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/live_present_num_text_margin_top" android:text="@string/live_present_num_3344" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/live_present_num_ll_8023" android:layout_width="@dimen/live_present_num_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/live_present_num_item_margin" android:layout_marginRight="@dimen/live_present_num_item_margin">
+                    <ImageView android:background="@drawable/live_present_num_button" android:layout_width="@dimen/live_present_num_width" android:layout_height="@dimen/live_present_num_width" android:src="@drawable/live_num_8023" android:scaleType="centerInside" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/setting_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/live_present_num_text_margin_top" android:text="@string/live_present_num_8023" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/live_present_num_ll_9999" android:layout_width="@dimen/live_present_num_width" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/live_present_num_button" android:layout_width="@dimen/live_present_num_width" android:layout_height="@dimen/live_present_num_width" android:src="@drawable/live_num_9999" android:scaleType="centerInside" />
+                    <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/setting_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/live_present_num_text_margin_top" android:text="@string/live_present_num_9999" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_present_num_bottom" android:layout_below="@id/present_num_ll" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

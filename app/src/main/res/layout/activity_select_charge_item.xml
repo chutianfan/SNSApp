@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container_rl" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/base_item_bg_selector" android:paddingLeft="@dimen/setting_pading_right" android:layout_width="fill_parent" android:layout_height="@dimen/live_present_top_height">
+        <TextView android:textSize="@dimen/title_content_text_size" android:textStyle="bold" android:textColor="@color/setting_title_text_color" android:gravity="center_vertical" android:id="@id/select_charge_item_tubi_tv" android:layout_width="wrap_content" android:layout_height="@dimen/live_present_top_height" android:text="" />
+        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/chat_text_color" android:gravity="center" android:id="@id/select_charge_item_money_tv" android:background="@drawable/chat_round_import_bt" android:layout_width="@dimen/my_tu_bi_bt_width" android:layout_height="@dimen/my_tu_bi_bt_height" android:layout_marginRight="@dimen/setting_pading_right" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/bottom_line" android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

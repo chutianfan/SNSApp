@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="music_cover_name">
+        <item>青春派</item>
+        <item>Heygirl</item>
+        <item>喜欢你</item>
+        <item>Byebye</item>
+        <item>Mylove</item>
+        <item>Dance</item>
+        <item>结局</item>
+        <item>Boom</item>
+        <item>口哨声</item>
+        <item>热辣舞</item>
+        <item>在午后</item>
+    </string-array>
+    <string-array name="image_filter_name">
+        <item>原图</item>
+        <item>美肤</item>
+        <item>森系</item>
+        <item>胶片</item>
+        <item>清新</item>
+        <item>个性</item>
+        <item>摩登</item>
+        <item>黑白</item>
+        <item>日系</item>
+        <item>复古</item>
+        <item>回忆</item>
+        <item>怀旧</item>
+    </string-array>
+</resources>

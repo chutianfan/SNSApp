@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tv_chatcontent_rl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="@color/white" android:id="@id/tv_chatcontent" android:paddingBottom="@dimen/live_member_margin_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+    </RelativeLayout>
+</LinearLayout>

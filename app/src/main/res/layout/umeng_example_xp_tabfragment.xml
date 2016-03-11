@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="37.0dip">
+            <RelativeLayout android:id="@id/father1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip">
+                <ListView android:id="@id/list_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#ffdedfde" android:dividerHeight="1.0px" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/father2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip">
+                <ListView android:id="@id/list_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#ffdedfde" android:dividerHeight="1.0px" />
+            </RelativeLayout>
+        </FrameLayout>
+        <TabWidget android:id="@android:id/tabs" android:background="@drawable/umeng_example_two_tab_left" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</TabHost>

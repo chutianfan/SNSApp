@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gitrose.mobile.TakeCameraFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+
+        android:id="@+id/img_camera"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dip"
+        android:src="@drawable/ic_camera_01"
+        />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_size_eightteen"
+        android:textColor="@color/white"
+        android:id="@id/activity_login_bt"
+        android:background="@drawable/register_anniu_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40.0dip"
+        android:text="@string/register_camera_button" />
+
+</RelativeLayout>

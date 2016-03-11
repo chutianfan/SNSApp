@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gitrose.mobile.view.KeyboardRelativeLayout android:id="@id/av_container_rl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/av_video_layer_ui" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/activity_qav_video_layer_ui" />
+    <RelativeLayout android:id="@id/qav_loading_rl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/qav_loading_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/qav_loading_iv_up" android:background="@color/live_loading_up" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_loading" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/av_video_layer_super_rl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/qav_top_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/activity_qav_top_bar" />
+        <include android:id="@id/qav_present_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" layout="@layout/activity_live_bottom_send_present" />
+        <include android:id="@id/qav_present_num_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" layout="@layout/activity_live_bottom_send_present_num" />
+    </RelativeLayout>
+</com.gitrose.mobile.view.KeyboardRelativeLayout>

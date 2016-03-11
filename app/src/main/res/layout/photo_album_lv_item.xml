@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/base_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/select_img_gridView_img" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="@dimen/home_action_bar_margin_left" android:layout_marginTop="@dimen/home_action_bar_margin_left" android:layout_marginRight="@dimen/home_action_bar_margin_left" android:layout_marginBottom="@dimen/home_action_bar_margin_left" android:src="@drawable/app_logo" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@id/select_img_gridView_path" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_img_gridView_path" />
+        <TextView android:id="@id/file_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="216" />
+    </LinearLayout>
+    <ImageView android:padding="@dimen/home_action_bar_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_to_right" />
+</LinearLayout>

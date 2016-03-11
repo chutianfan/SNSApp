@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/img_logo_01"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/subject"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_size_eightteen"
+            android:textColor="@color/white"
+            android:id="@id/activity_login_bt"
+            android:background="@drawable/register_anniu_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40.0dip"
+            android:text="@string/start" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:gravity="bottom"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:text="@string/copyright"
+        />
+
+</LinearLayout>

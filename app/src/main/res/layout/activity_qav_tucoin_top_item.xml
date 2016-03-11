@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/square_hot_user_item_rl" android:background="@drawable/base_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <RelativeLayout android:id="@id/square_hotuser_rank_rl" android:layout_width="@dimen/square_hot_user_rank_width" android:layout_height="@dimen/friends_user_head_size">
+                <TextView android:textSize="@dimen/friends_text_size" android:textColor="@color/setting_title_text_color" android:id="@id/send_coin_item_rank_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/send_coin_item_rank_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fans_level1" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/friends_head_block" android:layout_width="@dimen/default_avatar_parent_heigh" android:layout_height="@dimen/friends_user_head_size" android:layout_toRightOf="@id/square_hotuser_rank_rl" android:layout_centerVertical="true">
+                <com.gitrose.mobile.view.CircleImageView android:id="@id/send_coin_item_user_head" android:layout_width="@dimen/friends_user_head_size" android:layout_height="@dimen/friends_user_head_size" android:layout_marginLeft="@dimen/friends_user_head_marginleft" android:src="@drawable/app_logo" android:onClick="onClick" />
+                <ImageView android:id="@id/send_coin_item_iv_isauth" android:background="@drawable/personal_isauth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/date_text_size" android:textColor="@color/setting_text_color" android:id="@id/send_coin_item_coin_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/setting_pading_right" android:text="aaaa" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/setting_title_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/send_coin_item_name_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_pading_right" android:layout_marginRight="@dimen/setting_pading_right" android:text="等你归来" android:lines="1" android:layout_toLeftOf="@id/fans_item_right_iv" android:layout_toRightOf="@id/friends_head_block" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/bottom_line" android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/hot_user_avatar_divider_margin_left" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+</RelativeLayout>

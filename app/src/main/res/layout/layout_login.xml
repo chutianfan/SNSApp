@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_bt_height"
+        android:layout_margin="5dip">
+
+        <ImageView
+            android:id="@id/activity_login_phone_iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginRight="@dimen/edit_text_padding_left"
+            android:layout_marginTop="5.0dip"
+            android:src="@drawable/login_delete_bt"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@id/activity_login_et_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/activity_login_phone_iv_delete"
+            android:background="@null"
+            android:drawableLeft="@drawable/login_phone_iv"
+            android:hint="@string/mobile_number"
+            android:paddingLeft="@dimen/edit_text_padding_left"
+            android:paddingRight="@dimen/edit_text_padding_left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/setting_title_text_color"
+            android:textColorHint="@color/login_et_hint_text_color"
+            android:textSize="@dimen/text_size_eightteen" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_alignParentTop="true"
+            android:background="@color/pop_photo_bg" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="@dimen/edit_text_padding_left"
+        android:background="@color/pop_photo_bg" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_bt_height"
+        android:layout_margin="5dip">
+
+        <ImageView
+            android:id="@id/activity_login_pass_iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginRight="@dimen/edit_text_padding_left"
+            android:layout_marginTop="5.0dip"
+            android:src="@drawable/login_delete_bt"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@id/activity_login_et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/activity_login_pass_iv_delete"
+            android:background="@null"
+            android:drawableLeft="@drawable/login_pass_iv"
+            android:hint="@string/password"
+            android:paddingLeft="@dimen/edit_text_padding_left"
+            android:paddingRight="@dimen/edit_text_padding_left"
+            android:password="true"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/setting_title_text_color"
+            android:textColorHint="@color/login_et_hint_text_color"
+            android:textSize="@dimen/text_size_eightteen" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/pop_photo_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/edit_text_padding_left"
+        android:layout_marginTop="@dimen/login_register_divider_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@id/activity_login_tv_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="비밀번호가 기억안나세요？"
+            android:textColor="@color/login_forget_password_color"
+            android:textSize="@dimen/content_text_size" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@id/activity_login_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_bt_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/edit_text_padding_left"
+        android:layout_marginRight="@dimen/edit_text_padding_left"
+        android:layout_marginTop="@dimen/login_register_divider_height"
+        android:background="@drawable/login_button"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/send_text_color"
+        android:textSize="@dimen/title_text_size" />
+
+</LinearLayout>

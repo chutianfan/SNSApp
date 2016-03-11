@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingBottom="@dimen/personal_follow_item_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/square_hot_total_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@color/setting_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:padding="@dimen/personal_follow_item_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/content_text_size" android:textColor="@color/huati_more_normal" android:id="@id/square_hot_ht_tiezi_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="22个帖子" android:drawableRight="@drawable/icon_to_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_eightteen" android:textColor="@color/setting_title_text_color" android:ellipsize="end" android:gravity="left|center" android:id="@id/square_hot_ht_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/square_hot_ht_tiezi_num" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.gitrose.mobile.view.ScrollGridView android:gravity="center" android:id="@id/square_hot_ht_item_gridview" android:background="@color/white" android:paddingLeft="@dimen/personal_follow_item_padding_top" android:paddingRight="@dimen/personal_follow_item_padding_top" android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/base_item_bg_selector" android:cacheColorHint="#00000000" android:horizontalSpacing="5.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+    </LinearLayout>
+</LinearLayout>

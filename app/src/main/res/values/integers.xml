@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="np_config_longAnimTime">500</integer>
+    <integer name="login_scroll">100</integer>
+    <integer name="topic_new_scroll">600</integer>
+    <integer name="max_font">17</integer>
+    <integer name="min_font">8</integer>
+    <integer name="slide_bar_text_size">20</integer>
+    <integer name="personal_follow_item_pic_widt_gv">126</integer>
+    <integer name="comment_emotion_item_width">130</integer>
+    <integer name="live_memeber_avatar_width">46</integer>
+    <integer name="live_memeber_avatar_width_dp">32</integer>
+    <integer name="live_memeber_avatar_margin">8</integer>
+    <integer name="live_danmu_avatar_width">38</integer>
+    <integer name="live_present_height">375</integer>
+    <integer name="live_edit_bottom_height">16</integer>
+    <integer name="live_top_height">-160</integer>
+    <integer name="live_msg_list_height">165</integer>
+</resources>
